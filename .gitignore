@@ -4,5 +4,5 @@
 /NORMAL-LOG/
 /LOG/
 /.anr.log/
-/scripts/mobileperf/output/
-/scripts/mobileperf/logs/
+/scripts/output/
+/scripts/logs/
