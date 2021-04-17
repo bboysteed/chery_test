@@ -4,5 +4,6 @@
 /NORMAL-LOG/
 /LOG/
 /.anr.log/
-/scripts/output/
+scripts/mobileperf/output
 scripts/mobileperf/logs
+*.pyc
