@@ -1,0 +1,1150 @@
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'Chery/t1a_navi/t1a_navi:4.4.3/2.0.1-rc2/eng.citos-android.20200215.123056:user/dev-keys'
+Revision: '0'
+pid: 712, tid: 712, name: bootanimation  >>> /system/bin/bootanimation <<<
+signal 7 (SIGBUS), code 1 (BUS_ADRALN), fault addr 0000003f
+    r0 0000003f  r1 bef777d8  r2 fffffdbc  r3 0000003f
+    r4 01976748  r5 bef77808  r6 00000068  r7 b6f3d324
+    r8 00001000  r9 00000000  sl b6f3ff0c  fp 0000000c
+    ip b66bcf38  sp bef777c8  lr b66b52bb  pc b66c7558  cpsr 000f0010
+    d0  000000000000000f  d1  0000000000000000
+    d2  0000000000000000  d3  3fe0000000000000
+    d4  3fe0000016694e00  d5  3fdfffffd32d6400
+    d6  0000000000000000  d7  00000000cccccccd
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 3e2e848000000000  d17 3e2e848000000000
+    d18 416312d000000000  d19 0000000000000000
+    d20 401799999999999a  d21 404d800000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 404d800000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 4000000000000000
+    scr 60000010
+
+backtrace:
+    #00  pc 00003558  /system/lib/libcutils.so (android_atomic_inc+8)
+    #01  pc 0000d2b7  /system/lib/libutils.so (android::RefBase::createWeak(void const*) const+8)
+    #02  pc 0005355b  /system/lib/libmedia.so (android::wp<android::IBinder::DeathRecipient>::wp<android::IMediaDeathNotifier::DeathNotifier>(android::IMediaDeathNotifier::DeathNotifier*)+18)
+    #03  pc 00053663  /system/lib/libmedia.so
+    #04  pc 00053695  /system/lib/libmedia.so
+    #05  pc 0000d1a7  /system/lib/libutils.so (android::RefBase::weakref_type::decWeak(void const*)+66)
+    #06  pc 00053571  /system/lib/libmedia.so (android::wp<android::IMediaDeathNotifier>::~wp()+12)
+    #07  pc 00053a03  /system/lib/libmedia.so (android::MediaPlayer::~MediaPlayer()+134)
+    #08  pc 00053a2d  /system/lib/libmedia.so (android::MediaPlayer::~MediaPlayer()+4)
+    #09  pc 0000d1a7  /system/lib/libutils.so (android::RefBase::weakref_type::decWeak(void const*)+66)
+    #10  pc 0006042b  /system/lib/libmedia.so (android::SortedVector<android::wp<android::IMediaDeathNotifier> >::do_destroy(void*, unsigned int) const+20)
+    #11  pc 0000f55f  /system/lib/libutils.so
+    #12  pc 0000f57f  /system/lib/libutils.so (android::VectorImpl::release_storage()+28)
+    #13  pc 0000f593  /system/lib/libutils.so (android::VectorImpl::finish_vector()+4)
+    #14  pc 0006038d  /system/lib/libmedia.so
+    #15  pc 00028f35  /system/lib/libc.so (__cxa_finalize+156)
+    #16  pc 0002912d  /system/lib/libc.so (exit+6)
+    #17  pc 00007a94  /system/bin/bootanimation
+
+stack:
+         bef77788  00000001  
+         bef7778c  01976760  [heap]
+         bef77790  00000001  
+         bef77794  01976750  [heap]
+         bef77798  b666d0d4  /system/lib/libmedia.so
+         bef7779c  b66b7575  /system/lib/libutils.so (android::VectorImpl::release_storage()+18)
+         bef777a0  00000001  
+         bef777a4  b666d0d4  /system/lib/libmedia.so
+         bef777a8  00000000  
+         bef777ac  b66b7a2b  /system/lib/libutils.so (android::VectorImpl::_shrink(unsigned int, unsigned int)+138)
+         bef777b0  00000001  
+         bef777b4  00000000  
+         bef777b8  00000001  
+         bef777bc  00000068  
+         bef777c0  b6f3d324  
+         bef777c4  00001000  
+    #00  bef777c8  bef777d8  [stack]
+         ........  ........
+    #01  bef777c8  bef777d8  [stack]
+         bef777cc  b663555f  /system/lib/libmedia.so (android::wp<android::IBinder::DeathRecipient>::wp<android::IMediaDeathNotifier::DeathNotifier>(android::IMediaDeathNotifier::DeathNotifier*)+22)
+    #02  bef777d0  01976744  [heap]
+         bef777d4  b6635667  /system/lib/libmedia.so
+    #03  bef777d8  01976744  [heap]
+         bef777dc  00000008  
+         bef777e0  01976744  [heap]
+         bef777e4  b6635699  /system/lib/libmedia.so
+    #04  bef777e8  01973b78  [heap]
+         bef777ec  b66b51a9  /system/lib/libutils.so (android::RefBase::weakref_type::decWeak(void const*)+68)
+    #05  bef777f0  01976744  [heap]
+         bef777f4  bef77808  [stack]
+         bef777f8  01976760  [heap]
+         bef777fc  b6635575  /system/lib/libmedia.so (android::wp<android::IMediaDeathNotifier>::~wp()+16)
+    #06  bef77800  019766c8  [heap]
+         bef77804  b6635a07  /system/lib/libmedia.so (android::MediaPlayer::~MediaPlayer()+138)
+    #07  bef77808  01976744  [heap]
+         bef7780c  01973b78  [heap]
+         bef77810  019766c8  [heap]
+         bef77814  b6635a31  /system/lib/libmedia.so (android::MediaPlayer::~MediaPlayer()+8)
+    #08  bef77818  01973b78  [heap]
+         bef7781c  b66b51a9  /system/lib/libutils.so (android::RefBase::weakref_type::decWeak(void const*)+68)
+    #09  bef77820  01976744  [heap]
+         bef77824  01976768  [heap]
+         bef77828  00000001  
+         bef7782c  b664242f  /system/lib/libmedia.so (android::SortedVector<android::wp<android::IMediaDeathNotifier> >::do_destroy(void*, unsigned int) const+24)
+    #10  bef77830  b6642417  /system/lib/libmedia.so (android::SortedVector<android::wp<android::IMediaDeathNotifier> >::do_destroy(void*, unsigned int) const)
+         bef77834  00000000  
+         bef77838  b666d0d4  /system/lib/libmedia.so
+         bef7783c  b66b7561  /system/lib/libutils.so
+    #11  bef77840  01976750  [heap]
+         bef77844  b66b7583  /system/lib/libutils.so (android::VectorImpl::release_storage()+32)
+    #12  bef77848  b666a730  /system/lib/libmedia.so
+         bef7784c  b666d0d4  /system/lib/libmedia.so
+         bef77850  b6f454ec  
+         bef77854  b66b7597  /system/lib/libutils.so (android::VectorImpl::finish_vector()+8)
+    #13  bef77858  b666d0d4  /system/lib/libmedia.so
+         bef7785c  b6642391  /system/lib/libmedia.so
+    #14  bef77860  b6f45000  
+         bef77864  b6f0df37  /system/lib/libc.so (__cxa_finalize+158)
+    #15  bef77868  01000001  
+         bef7786c  b6f454f8  
+         bef77870  bef778a8  [stack]
+         bef77874  b664237d  /system/lib/libmedia.so
+         bef77878  b666d0d4  /system/lib/libmedia.so
+         bef7787c  b666d000  /system/lib/libmedia.so
+         bef77880  0000f1dc  /system/bin/bootanimation
+         bef77884  00000000  
+         bef77888  bef779bc  [stack]
+         bef7788c  00000001  
+         bef77890  b6f2efd8  /system/lib/libc.so
+         bef77894  0000f798  /system/bin/bootanimation
+         bef77898  00000000  
+         bef7789c  00000000  
+         bef778a0  bef77978  [stack]
+         bef778a4  b6f0e131  /system/lib/libc.so (exit+10)
+    #16  bef778a8  33f3a32e  
+         bef778ac  0000fa98  /system/bin/bootanimation
+    #17  bef778b0  00000000  
+         bef778b4  00000000  
+         bef778b8  00000000  
+         bef778bc  00000000  
+         bef778c0  00000000  
+         bef778c4  00000036  
+         bef778c8  00000000  
+         bef778cc  00000000  
+         bef778d0  00000000  
+         bef778d4  00000000  
+         bef778d8  00000000  
+         bef778dc  00000000  
+         bef778e0  01975348  [heap]
+         bef778e4  00061650  /system/bin/bootanimation
+         bef778e8  00000000  
+         bef778ec  00000000  
+
+memory near r1:
+    bef777b8 00000001 00000068 b6f3d324 00001000  
+    bef777c8 bef777d8 b663555f 01976744 b6635667  
+    bef777d8 01976744 00000008 01976744 b6635699  
+    bef777e8 01973b78 b66b51a9 01976744 bef77808  
+    bef777f8 01976760 b6635575 019766c8 b6635a07  
+    bef77808 01976744 01973b78 019766c8 b6635a31  
+    bef77818 01973b78 b66b51a9 01976744 01976768  
+    bef77828 00000001 b664242f b6642417 00000000  
+    bef77838 b666d0d4 b66b7561 01976750 b66b7583  
+    bef77848 b666a730 b666d0d4 b6f454ec b66b7597  
+    bef77858 b666d0d4 b6642391 b6f45000 b6f0df37  
+    bef77868 01000001 b6f454f8 bef778a8 b664237d  
+    bef77878 b666d0d4 b666d000 0000f1dc 00000000  
+    bef77888 bef779bc 00000001 b6f2efd8 0000f798  
+    bef77898 00000000 00000000 bef77978 b6f0e131  
+    bef778a8 33f3a32e 0000fa98 00000000 00000000  
+
+memory near r4:
+    01976728 00000000 00000000 00000000 00000000  
+    01976738 00000000 b665fa5c 01973b78 b665f6d4  
+    01976748 b665f6fc 0000003b ffffffff 00000020  
+    01976758 00000000 00000000 01976744 01973b78  
+    01976768 00000000 00000000 00000000 00000000  
+    01976778 00000000 00000000 00000000 0000001b  
+    01976788 00000001 00000001 01976eb4 00000001  
+    01976798 01976a78 00000023 00000001 00000002  
+    019767a8 0197705c 00000001 01976ec8 01976f08  
+    019767b8 00000020 000000ab 01975018 000002c8  
+    019767c8 b6698698 00000000 00000000 00000007  
+    019767d8 00000004 b66986c0 00000000 00000000  
+    019767e8 00000007 00000004 00000000 01976868  
+    019767f8 00000030 00000100 00000030 00000000  
+    01976808 00000000 00000000 00000000 00010001  
+    01976818 00000000 00000000 00000000 01976970  
+
+memory near r5:
+    bef777e8 01973b78 b66b51a9 01976744 bef77808  
+    bef777f8 01976760 b6635575 019766c8 b6635a07  
+    bef77808 01976744 01973b78 019766c8 b6635a31  
+    bef77818 01973b78 b66b51a9 01976744 01976768  
+    bef77828 00000001 b664242f b6642417 00000000  
+    bef77838 b666d0d4 b66b7561 01976750 b66b7583  
+    bef77848 b666a730 b666d0d4 b6f454ec b66b7597  
+    bef77858 b666d0d4 b6642391 b6f45000 b6f0df37  
+    bef77868 01000001 b6f454f8 bef778a8 b664237d  
+    bef77878 b666d0d4 b666d000 0000f1dc 00000000  
+    bef77888 bef779bc 00000001 b6f2efd8 0000f798  
+    bef77898 00000000 00000000 bef77978 b6f0e131  
+    bef778a8 33f3a32e 0000fa98 00000000 00000000  
+    bef778b8 00000000 00000000 00000000 00000036  
+    bef778c8 00000000 00000000 00000000 00000000  
+    bef778d8 00000000 00000000 01975348 00061650  
+
+memory near r7:
+    b6f3d304 00000000 00000000 00000000 00000000  
+    b6f3d314 00000000 00000000 00000000 00000001  
+    b6f3d324 00000001 00000000 00000000 00000000  
+    b6f3d334 00000000 00000000 00000000 00000000  
+    b6f3d344 00000000 00000000 00000000 01976da8  
+    b6f3d354 00000000 00000000 00000000 00000000  
+    b6f3d364 00000000 00000000 00000000 00000000  
+    b6f3d374 00000000 00000000 00000000 00000000  
+    b6f3d384 00000000 00000000 00000000 00000000  
+    b6f3d394 00000000 00000000 00000000 00000000  
+    b6f3d3a4 00000000 00000000 00000000 00000000  
+    b6f3d3b4 00000000 00000000 00000000 00000000  
+    b6f3d3c4 00000000 00000000 00000000 00000000  
+    b6f3d3d4 00000000 00000000 00000000 00000000  
+    b6f3d3e4 00000000 00000000 00000000 00000000  
+    b6f3d3f4 00000000 00000000 00000000 00000000  
+
+memory near r8:
+    00000fe0 ffffffff ffffffff ffffffff ffffffff  
+    00000ff0 ffffffff ffffffff ffffffff ffffffff  
+    00001000 ffffffff ffffffff ffffffff ffffffff  
+    00001010 ffffffff ffffffff ffffffff ffffffff  
+    00001020 ffffffff ffffffff ffffffff ffffffff  
+    00001030 ffffffff ffffffff ffffffff ffffffff  
+    00001040 ffffffff ffffffff ffffffff ffffffff  
+    00001050 ffffffff ffffffff ffffffff ffffffff  
+    00001060 ffffffff ffffffff ffffffff ffffffff  
+    00001070 ffffffff ffffffff ffffffff ffffffff  
+    00001080 ffffffff ffffffff ffffffff ffffffff  
+    00001090 ffffffff ffffffff ffffffff ffffffff  
+    000010a0 ffffffff ffffffff ffffffff ffffffff  
+    000010b0 ffffffff ffffffff ffffffff ffffffff  
+    000010c0 ffffffff ffffffff ffffffff ffffffff  
+    000010d0 ffffffff ffffffff ffffffff ffffffff  
+
+memory near sl:
+    b6f3feec 00000000 00000000 00000000 00000000  
+    b6f3fefc 00000000 00000000 00000000 00000000  
+    b6f3ff0c b6f45000 00000000 00000000 00000000  
+    b6f3ff1c 0001ff80 00020000 00000000 00000000  
+    b6f3ff2c 00000000 00000000 00000000 00000000  
+    b6f3ff3c 00000000 00000000 00000000 00000000  
+    b6f3ff4c 00000000 00000000 00000000 00000000  
+    b6f3ff5c 00000000 00000000 00000000 00000000  
+    b6f3ff6c 00000000 00000000 00000000 00000000  
+    b6f3ff7c 00000000 00000000 00000000 00000000  
+    b6f3ff8c 00000000 00000000 00000000 00000000  
+    b6f3ff9c 00000000 00000000 00000000 00000000  
+    b6f3ffac 00000000 00000000 00000000 00000000  
+    b6f3ffbc 00000000 00000000 00000000 00000000  
+    b6f3ffcc 00000000 00000000 00000000 00000000  
+    b6f3ffdc 00000000 00000000 00000000 00000000  
+
+memory near ip:
+    b66bcf18 b6f10a3d b6ef716f b6ef71d7 b6f0b8b9  
+    b66bcf28 b6f0898c b6f07af8 b6f0ed09 b6f10431  
+    b66bcf38 b66c7550 b66c7530 b66c7570 b66c7508  
+    b66bcf48 b66c75b4 b6ef2d01 b6f1f87b b6f08181  
+    b66bcf58 b6f0dc35 b6f109b1 b6f1f607 b6f08983  
+    b66bcf68 b6f12e45 b6f05468 b6f12229 b6ef7d81  
+    b66bcf78 b6ef7da9 b6ef7df1 b6ef22f0 b6ef7d9b  
+    b66bcf88 b6ef39b8 b6ef38b4 b6f052ec b6f051cc  
+    b66bcf98 b66c8acd b6ef80f9 b6f05004 b6f120b7  
+    b66bcfa8 b6ef3690 b6ef3dc4 b6ef4010 b6ef40fc  
+    b66bcfb8 b6ef3e04 b6ef3d40 b6ef3e20 b6f05f90  
+    b66bcfc8 b6ee2927 b6f05b94 b6ee2919 b6f05394  
+    b66bcfd8 b6ef278c b6ef406c b6ef29d8 b6ef29f8  
+    b66bcfe8 b6f053b4 b6f06808 b6f06828 b6f05738  
+    b66bcff8 b6f112f1 b6f067e8 b66bd000 ffffffff  
+    b66bd008 00000001 ffffffff b66b6465 00000000  
+
+memory near sp:
+    bef777a8 00000000 b66b7a2b 00000001 00000000  
+    bef777b8 00000001 00000068 b6f3d324 00001000  
+    bef777c8 bef777d8 b663555f 01976744 b6635667  
+    bef777d8 01976744 00000008 01976744 b6635699  
+    bef777e8 01973b78 b66b51a9 01976744 bef77808  
+    bef777f8 01976760 b6635575 019766c8 b6635a07  
+    bef77808 01976744 01973b78 019766c8 b6635a31  
+    bef77818 01973b78 b66b51a9 01976744 01976768  
+    bef77828 00000001 b664242f b6642417 00000000  
+    bef77838 b666d0d4 b66b7561 01976750 b66b7583  
+    bef77848 b666a730 b666d0d4 b6f454ec b66b7597  
+    bef77858 b666d0d4 b6642391 b6f45000 b6f0df37  
+    bef77868 01000001 b6f454f8 bef778a8 b664237d  
+    bef77878 b666d0d4 b666d000 0000f1dc 00000000  
+    bef77888 bef779bc 00000001 b6f2efd8 0000f798  
+    bef77898 00000000 00000000 bef77978 b6f0e131  
+
+code around pc:
+    b66c7538 e1910f9f e080c003 e1812f9c e3520000  
+    b66c7548 1afffffa e12fff1e e1a03000 f57ff05f  
+    b66c7558 e1930f9f e2801001 e1832f91 e3520000  
+    b66c7568 1afffffa e12fff1e e1a03000 f57ff05f  
+    b66c7578 e3e02000 e1930f9f e080c002 e1831f9c  
+    b66c7588 e3510000 1afffffa e12fff1e e1a03000  
+    b66c7598 f57ff05f e1910f9f e000c003 e1812f9c  
+    b66c75a8 e3520000 1afffffa e12fff1e e1a03000  
+    b66c75b8 f57ff05f e1910f9f e180c003 e1812f9c  
+    b66c75c8 e3520000 1afffffa e12fff1e 6883b508  
+    b66c75d8 47984608 2140ea6f ea801840 eb023290  
+    b66c75e8 ea831302 bd082093 2203b5f8 46046943  
+    b66c75f8 43726846 0f92ebb3 0076d923 46302104  
+    b66c7608 ec50f7ff b1e04605 1e772200 6821e011  
+    b66c7618 3022f851 6858e00a e00cf8d3 0c00ea07  
+    b66c7628 102cf855 f84560d9 4673302c d1f22b00  
+
+code around lr:
+    b66b5298 bfd42c00 20012000 6874bd70 dcf12c00  
+    b66b52a8 6840e7f6 b5104770 68404604 f7fd3004  
+    b66b52b8 6860e954 0000bd10 b5104b09 4604447b  
+    b66b52c8 60033308 f7fd2010 2100e870 5280f04f  
+    b66b52d8 60026084 60c16041 46206060 bf00bd10  
+    b66b52e8 00007688 46086843 010cf103 bdfaf003  
+    b66b52f8 4604b510 0010f100 e83ef7fd 2301b110  
+    b66b5308 0018e880 b510bd10 b91c6804 e828f7fd  
+    b66b5318 bd104620 30fff04f 6803bd10 bf182b01  
+    b66b5328 47702000 bdcef003 4604b538 460d6803  
+    b66b5338 d0082b01 e91cf7fd d1092801 4620e003  
+    b66b5348 e80ef7fd 2000e003 602007eb 2001d5f7  
+    b66b5358 b538bd38 46084605 ffcaf7ff b1184604  
+    b66b5368 21004628 ffe0f7ff bd384620 4604b570  
+    b66b5378 460d6803 d1092b01 42a96841 f105d01a  
+    b66b5388 f7fd0110 b108e908 bd706045 f7ff4628  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 712, tid: 727, name: bootanimation
+    r0 b6eb3dbc  r1 00000080  r2 00000000  r3 00000000
+    r4 00000000  r5 00000000  r6 00000002  r7 000000f0
+    r8 00000007  r9 85c645e4  sl b6eb3af0  fp 00000007
+    ip 00000000  sp b62d2c60  lr b67bb6d0  pc b67ec47c  cpsr 200d0010
+    d0  0000000000000000  d1  c1162e42fefa39ef
+    d2  bfe62e42fefa39ef  d3  4059000000000000
+    d4  0000000000000000  d5  0000000000000000
+    d6  0000000000000000  d7  04f27ac000000000
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 000000000004ac69
+    d16 0000000000000000  d17 0000000000000000
+    d18 41c3218115800000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000011
+
+backtrace:
+    #00  pc 0010847c  /system/lib/libmsc.so
+    #01  pc 000d76cc  /system/lib/libmsc.so
+
+stack:
+         b62d2c20  00000000  
+         b62d2c24  00000000  
+         b62d2c28  00000000  
+         b62d2c2c  00000000  
+         b62d2c30  00000000  
+         b62d2c34  00000000  
+         b62d2c38  00000000  
+         b62d2c3c  00000000  
+         b62d2c40  00000000  
+         b62d2c44  00000000  
+         b62d2c48  00000000  
+         b62d2c4c  00000000  
+         b62d2c50  00000000  
+         b62d2c54  00000000  
+         b62d2c58  00000000  
+         b62d2c5c  00000000  
+    #00  b62d2c60  b679a3b0  /system/lib/libmsc.so
+         ........  ........
+    #01  b62d2c60  b679a3b0  /system/lib/libmsc.so
+         b62d2c64  b6eb3dbc  
+         b62d2c68  00000080  
+         b62d2c6c  00000000  
+         b62d2c70  00000000  
+         b62d2c74  00000000  
+         b62d2c78  00000000  
+         b62d2c7c  b6799f01  /system/lib/libmsc.so
+         b62d2c80  00000000  
+         b62d2c84  00000000  
+         b62d2c88  b67c42e4  /system/lib/libmsc.so
+         b62d2c8c  b6eb3dbc  
+         b62d2c90  00000000  
+         b62d2c94  ffffffff  
+         b62d2c98  ffffffff  
+         b62d2c9c  ffffffff  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 712, tid: 728, name: bootanimation
+    r0 b6eb39f0  r1 00000080  r2 00000000  r3 a5f72cc0
+    r4 00000000  r5 00000000  r6 00000000  r7 000000f0
+    r8 00000000  r9 00000000  sl 85c00540  fp b6e780ec
+    ip 00000001  sp a5f72ca0  lr b67bb730  pc b67ec47c  cpsr a00d0010
+    d0  0000000000000000  d1  c1162e42fefa39ef
+    d2  bfe62e42fefa39ef  d3  4059000000000000
+    d4  0000000000000000  d5  0000000000000000
+    d6  0000000000000000  d7  04f27ac000000000
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 000000000002986c
+    d16 0000000000000000  d17 0000000000000000
+    d18 41c3218115800000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000011
+
+backtrace:
+    #00  pc 0010847c  /system/lib/libmsc.so
+    #01  pc 000d772c  /system/lib/libmsc.so
+
+stack:
+         a5f72c60  00000000  
+         a5f72c64  00000000  
+         a5f72c68  00000000  
+         a5f72c6c  00000000  
+         a5f72c70  00000000  
+         a5f72c74  00000000  
+         a5f72c78  00000000  
+         a5f72c7c  00000000  
+         a5f72c80  b6799f94  /system/lib/libmsc.so
+         a5f72c84  b6eb3968  
+         a5f72c88  00000000  
+         a5f72c8c  b67cc338  /system/lib/libmsc.so
+         a5f72c90  b6799f94  /system/lib/libmsc.so
+         a5f72c94  b6eb3968  
+         a5f72c98  b6799f94  /system/lib/libmsc.so
+         a5f72c9c  b6ec39b4  
+    #00  a5f72ca0  b679a618  /system/lib/libmsc.so
+         ........  ........
+    #01  a5f72ca0  b679a618  /system/lib/libmsc.so
+         a5f72ca4  b6eb39f0  
+         a5f72ca8  00000080  
+         a5f72cac  00000000  
+         a5f72cb0  a5f72cc0  [stack:728]
+         a5f72cb4  00000000  
+         a5f72cb8  00000000  
+         a5f72cbc  00000001  
+         a5f72cc0  0000003c  
+         a5f72cc4  00000000  
+         a5f72cc8  b679a740  /system/lib/libmsc.so
+         a5f72ccc  b6eb39f0  
+         a5f72cd0  00000000  
+         a5f72cd4  f8475800  
+         a5f72cd8  0000000d  
+         a5f72cdc  ba008a45  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 712, tid: 729, name: Binder_1
+    r0 00000003  r1 c0186201  r2 a5d76d18  r3 a5d76d10
+    r4 01975cc0  r5 01975c90  r6 01975cf0  r7 00000036
+    r8 00000001  r9 a5c79000  sl bef77804  fp b6f312ec
+    ip 00000001  sp a5d76d00  lr b6f1223b  pc b6f05660  cpsr 600f0010
+    d0  4242424242424242  d1  4242424242424242
+    d2  0000000000000000  d3  0000000000000000
+    d4  0000000000000000  d5  0000000000000000
+    d6  0000000000000000  d7  bd6bc8e300000000
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 4193f11916b33333  d17 3f50624dd2f1a9fc
+    d18 41c3218115800000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 00000010
+
+backtrace:
+    #00  pc 00020660  /system/lib/libc.so (__ioctl+8)
+    #01  pc 0002d237  /system/lib/libc.so (ioctl+14)
+    #02  pc 0001d3ed  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+140)
+    #03  pc 0001daf7  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+6)
+    #04  pc 0001db8d  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+48)
+    #05  pc 000219f5  /system/lib/libbinder.so
+    #06  pc 0000ea95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+216)
+    #07  pc 0000e5c7  /system/lib/libutils.so
+    #08  pc 0000d248  /system/lib/libc.so (__thread_entry+72)
+    #09  pc 0000d3e0  /system/lib/libc.so (pthread_create+240)
+
+stack:
+         a5d76cc0  00000000  
+         a5d76cc4  00000000  
+         a5d76cc8  00010001  /system/bin/bootanimation
+         a5d76ccc  b668c295  /system/lib/libbinder.so (android::IPCThreadState::freeBuffer(android::Parcel*, unsigned char const*, unsigned int, unsigned int const*, unsigned int, void*))
+         a5d76cd0  01975c90  [heap]
+         a5d76cd4  00000000  
+         a5d76cd8  00000000  
+         a5d76cdc  00000000  
+         a5d76ce0  00000000  
+         a5d76ce4  00000000  
+         a5d76ce8  00000000  
+         a5d76cec  00000000  
+         a5d76cf0  00000001  
+         a5d76cf4  00000007  
+         a5d76cf8  0000000a  
+         a5d76cfc  b66c8b51  /system/lib/libcutils.so (set_sched_policy+132)
+    #00  a5d76d00  00000003  
+         ........  ........
+    #01  a5d76d00  00000003  
+         a5d76d04  a5d76d10  [stack:729]
+         a5d76d08  b668c3f1  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+144)
+         a5d76d0c  c0186201  
+         a5d76d10  a5d76d18  [stack:729]
+         a5d76d14  00000008  
+    #02  a5d76d18  00000008  
+         a5d76d1c  00000008  
+         a5d76d20  01975e40  [heap]
+         a5d76d24  00000100  
+         a5d76d28  00000000  
+         a5d76d2c  01975d38  [heap]
+         a5d76d30  01975c90  [heap]
+         a5d76d34  01975cf0  [heap]
+         a5d76d38  00000001  
+         a5d76d3c  b669a9ec  /system/lib/libbinder.so
+         a5d76d40  b66b6591  /system/lib/libutils.so
+         a5d76d44  b668cafb  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+10)
+    #03  a5d76d48  01975c90  [heap]
+         a5d76d4c  01975cf0  [heap]
+         a5d76d50  00000001  
+         a5d76d54  b668cb91  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+52)
+    #04  a5d76d58  01975c90  [heap]
+         a5d76d5c  00000001  
+         a5d76d60  01975098  [heap]
+         a5d76d64  a5d76d78  [stack:729]
+         a5d76d68  00000001  
+         a5d76d6c  b66909f9  /system/lib/libbinder.so
+    #05  a5d76d70  01975098  [heap]
+         a5d76d74  b66b6a97  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+218)
+    #06  a5d76d78  01975098  [heap]
+         a5d76d7c  b6ef632f  /system/lib/libc.so (dlfree+50)
+         a5d76d80  01975098  [heap]
+         a5d76d84  019750d0  [heap]
+         a5d76d88  01973a90  [heap]
+         a5d76d8c  01973a90  [heap]
+         a5d76d90  00000000  
+         a5d76d94  b66b69bd  /system/lib/libutils.so (android::Thread::_threadLoop(void*))
+         a5d76d98  01975098  [heap]
+         a5d76d9c  b66b65c9  /system/lib/libutils.so
+    #07  a5d76da0  00000000  
+         a5d76da4  a5d76dd0  [stack:729]
+         a5d76da8  01975100  [heap]
+         a5d76dac  b66b6591  /system/lib/libutils.so
+         a5d76db0  019750e8  [heap]
+         a5d76db4  b6ef224c  /system/lib/libc.so (__thread_entry+76)
+    #08  a5d76db8  019750e8  [heap]
+         a5d76dbc  01975100  [heap]
+         a5d76dc0  a5d76dd0  [stack:729]
+         a5d76dc4  00000000  
+         a5d76dc8  00000078  
+         a5d76dcc  b6ef23e4  /system/lib/libc.so (pthread_create+244)
+    #09  a5d76dd0  a5d76dd0  [stack:729]
+         a5d76dd4  01975100  [heap]
+         a5d76dd8  00000000  
+         a5d76ddc  00000000  
+         a5d76de0  00000000  
+         a5d76de4  33f3a32e  
+         a5d76de8  00000000  
+         a5d76dec  00000000  
+         a5d76df0  00000000  
+         a5d76df4  00000000  
+         a5d76df8  00000000  
+         a5d76dfc  00000000  
+         a5d76e00  00000000  
+         a5d76e04  00000000  
+         a5d76e08  01975c90  [heap]
+         a5d76e0c  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 712, tid: 730, name: bootanimation
+    r0 85c2648c  r1 00000080  r2 00000000  r3 00000000
+    r4 00000000  r5 00000000  r6 00000002  r7 000000f0
+    r8 00000007  r9 85c4a224  sl 85c007e0  fp 00000007
+    ip 00000000  sp 85bffc78  lr b67bb6d0  pc b67ec47c  cpsr 200d0010
+    d0  0000000000000000  d1  4040800000000000
+    d2  40e51ea333333333  d3  3fe51eb851eb851f
+    d4  0000000000000000  d5  0000000000000000
+    d6  0000000000000000  d7  04f27ac000000000
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 000000000000ffff
+    d16 0000000000000000  d17 0000000000000000
+    d18 41c3218115800000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000011
+
+backtrace:
+    #00  pc 0010847c  /system/lib/libmsc.so
+    #01  pc 000d76cc  /system/lib/libmsc.so
+
+stack:
+         85bffc38  b61a0000  
+         85bffc3c  00000000  
+         85bffc40  b6eb8f04  
+         85bffc44  00000000  
+         85bffc48  b67b2cb0  /system/lib/libmsc.so
+         85bffc4c  b67b792c  /system/lib/libmsc.so
+         85bffc50  a5f73000  
+         85bffc54  00001490  
+         85bffc58  000014a0  
+         85bffc5c  a5f73001  
+         85bffc60  000014a0  
+         85bffc64  b67b79c8  /system/lib/libmsc.so
+         85bffc68  a5f73000  
+         85bffc6c  00000010  
+         85bffc70  000014a0  
+         85bffc74  b67b7b88  /system/lib/libmsc.so
+    #00  85bffc78  b679a3b0  /system/lib/libmsc.so
+         ........  ........
+    #01  85bffc78  b679a3b0  /system/lib/libmsc.so
+         85bffc7c  85c2648c  [stack:732]
+         85bffc80  00000080  
+         85bffc84  00000000  
+         85bffc88  00000000  
+         85bffc8c  00000000  
+         85bffc90  00000000  
+         85bffc94  b6799f01  /system/lib/libmsc.so
+         85bffc98  00000000  
+         85bffc9c  00000000  
+         85bffca0  b67c42e4  /system/lib/libmsc.so
+         85bffca4  85c2648c  [stack:732]
+         85bffca8  00000000  
+         85bffcac  ffffffff  
+         85bffcb0  ffffffff  
+         85bffcb4  ffffffff  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 712, tid: 731, name: bootanimation
+    r0 fffffffc  r1 85b014d0  r2 00000080  r3 ffffffff
+    r4 00000000  r5 00000013  r6 00000002  r7 000000fc
+    r8 00000007  r9 00000000  sl 85c00a80  fp b6e7f044
+    ip 85d6c131  sp 85b014a8  lr b67bb540  pc b67ec738  cpsr 200d0010
+    d0  40b0f6deaa59396b  d1  4020000000000000
+    d2  40e51ea333333333  d3  3fe51eb851eb851f
+    d4  0000000000000000  d5  0000000000000000
+    d6  0000000000000000  d7  04f27ac000000000
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 000000000000ffff
+    d16 0000000000000000  d17 0000000000000000
+    d18 41c3218115800000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 80000011
+
+backtrace:
+    #00  pc 00108738  /system/lib/libmsc.so
+    #01  pc 000d753c  /system/lib/libmsc.so
+
+stack:
+         85b01468  00000000  
+         85b0146c  00000000  
+         85b01470  b67ba978  /system/lib/libmsc.so
+         85b01474  a5c35f88  
+         85b01478  00000000  
+         85b0147c  00000001  
+         85b01480  00000001  
+         85b01484  00000000  
+         85b01488  a5c35f88  
+         85b0148c  b67bb4d8  /system/lib/libmsc.so
+         85b01490  a5c35f40  
+         85b01494  00000077  
+         85b01498  00000001  
+         85b0149c  00000000  
+         85b014a0  00000000  
+         85b014a4  85c589a0  [stack:732]
+    #00  85b014a8  b67c5310  /system/lib/libmsc.so
+         ........  ........
+    #01  85b014a8  b67c5310  /system/lib/libmsc.so
+         85b014ac  00000005  
+         85b014b0  85b014d0  [stack:731]
+         85b014b4  00000080  
+         85b014b8  ffffffff  
+         85b014bc  00000000  
+         85b014c0  ffffffff  
+         85b014c4  00000000  
+         85b014c8  00000000  
+         85b014cc  00000000  
+         85b014d0  00000000  
+         85b014d4  00000000  
+         85b014d8  00000000  
+         85b014dc  00000000  
+         85b014e0  00000000  
+         85b014e4  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 712, tid: 732, name: bootanimation
+    r0 b6eb5bf4  r1 00000080  r2 00000000  r3 85c1ef4c
+    r4 00000000  r5 00000000  r6 00000001  r7 000000f0
+    r8 00000000  r9 00000018  sl 85c588c0  fp b6e780ec
+    ip 00000004  sp 85c1ef2c  lr b67bb730  pc b67ec47c  cpsr a00d0010
+    d0  0000000000000000  d1  c1162e42fefa39ef
+    d2  bfe62e42fefa39ef  d3  4059000000000000
+    d4  0000000000000000  d5  0000000000000000
+    d6  0000000000000000  d7  04f27ac000000000
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 000000000002986c
+    d16 0000000000000000  d17 0000000000000000
+    d18 41c3218115800000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000011
+
+backtrace:
+    #00  pc 0010847c  /system/lib/libmsc.so
+    #01  pc 000d772c  /system/lib/libmsc.so
+
+stack:
+         85c1eeec  00000001  
+         85c1eef0  00000004  
+         85c1eef4  a817c800  
+         85c1eef8  00000000  
+         85c1eefc  85c642c0  [stack:732]
+         85c1ef00  b67c6e9c  /system/lib/libmsc.so
+         85c1ef04  85c58908  [stack:732]
+         85c1ef08  00000002  
+         85c1ef0c  00000003  
+         85c1ef10  00000001  
+         85c1ef14  00000000  
+         85c1ef18  00000000  
+         85c1ef1c  00000000  
+         85c1ef20  00000000  
+         85c1ef24  00000003  
+         85c1ef28  00000002  
+    #00  85c1ef2c  b679a618  /system/lib/libmsc.so
+         ........  ........
+    #01  85c1ef2c  b679a618  /system/lib/libmsc.so
+         85c1ef30  b6eb5bf4  
+         85c1ef34  00000080  
+         85c1ef38  00000000  
+         85c1ef3c  85c1ef4c  [stack:732]
+         85c1ef40  00000000  
+         85c1ef44  00000000  
+         85c1ef48  85c1ef74  [stack:732]
+         85c1ef4c  00000013  
+         85c1ef50  3b7c278d  
+         85c1ef54  b679a7bc  /system/lib/libmsc.so
+         85c1ef58  b6eb5bf4  
+         85c1ef5c  00000000  
+         85c1ef60  a7f9258d  
+         85c1ef64  00000004  
+         85c1ef68  2a16cb48  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 712, tid: 734, name: bootanimation
+    r0 b6ec3ccc  r1 00000080  r2 00000000  r3 00000000
+    r4 00000000  r5 00000000  r6 00000001  r7 000000f0
+    r8 00000007  r9 85808000  sl 85c582a0  fp 00000007
+    ip 00000001  sp 85905d08  lr b67bb6d0  pc b67ec47c  cpsr 200d0010
+    d0  0000000000000000  d1  c1162e42fefa39ef
+    d2  bfe62e42fefa39ef  d3  4059000000000000
+    d4  0000000000000000  d5  0000000000000000
+    d6  0000000000000000  d7  04f27ac000000000
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 000000000002986c
+    d16 0000000000000000  d17 0000000000000000
+    d18 41c3218115800000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000011
+
+backtrace:
+    #00  pc 0010847c  /system/lib/libmsc.so
+    #01  pc 000d76cc  /system/lib/libmsc.so
+
+stack:
+         85905cc8  00000000  
+         85905ccc  00000000  
+         85905cd0  00000000  
+         85905cd4  00000000  
+         85905cd8  00000000  
+         85905cdc  00000000  
+         85905ce0  00000000  
+         85905ce4  00000000  
+         85905ce8  00000000  
+         85905cec  00000000  
+         85905cf0  00000000  
+         85905cf4  00000000  
+         85905cf8  00000000  
+         85905cfc  00000000  
+         85905d00  00000000  
+         85905d04  00000000  
+    #00  85905d08  b679a3b0  /system/lib/libmsc.so
+         ........  ........
+    #01  85905d08  b679a3b0  /system/lib/libmsc.so
+         85905d0c  b6ec3ccc  
+         85905d10  00000080  
+         85905d14  00000000  
+         85905d18  00000000  
+         85905d1c  00000000  
+         85905d20  00000000  
+         85905d24  b67d5101  /system/lib/libmsc.so
+         85905d28  00000000  
+         85905d2c  00000000  
+         85905d30  b67c41d4  /system/lib/libmsc.so
+         85905d34  b6ec3ccc  
+         85905d38  00000000  
+         85905d3c  ffffffff  
+         85905d40  ffffffff  
+         85905d44  ffffffff  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 712, tid: 735, name: Binder_2
+    r0 00000003  r1 c0186201  r2 85807d18  r3 85807d10
+    r4 019761f8  r5 019761c8  r6 01976228  r7 00000036
+    r8 00000001  r9 8570a000  sl a5d76bfc  fp b6f312ec
+    ip 00000001  sp 85807d00  lr b6f1223b  pc b6f05660  cpsr 600f0010
+    d0  000000000000000f  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  0000000000000000  d5  0000000000000000
+    d6  0000000000000000  d7  bd6bc8e300000000
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 4193f11916b33333  d17 3f50624dd2f1a9fc
+    d18 41c3218115800000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 00000010
+
+backtrace:
+    #00  pc 00020660  /system/lib/libc.so (__ioctl+8)
+    #01  pc 0002d237  /system/lib/libc.so (ioctl+14)
+    #02  pc 0001d3ed  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+140)
+    #03  pc 0001daf7  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+6)
+    #04  pc 0001db8d  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+48)
+    #05  pc 000219f5  /system/lib/libbinder.so
+    #06  pc 0000ea95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+216)
+    #07  pc 0000e5c7  /system/lib/libutils.so
+    #08  pc 0000d248  /system/lib/libc.so (__thread_entry+72)
+    #09  pc 0000d3e0  /system/lib/libc.so (pthread_create+240)
+
+stack:
+         85807cc0  00000000  
+         85807cc4  00000000  
+         85807cc8  00010001  /system/bin/bootanimation
+         85807ccc  b668c295  /system/lib/libbinder.so (android::IPCThreadState::freeBuffer(android::Parcel*, unsigned char const*, unsigned int, unsigned int const*, unsigned int, void*))
+         85807cd0  019761c8  [heap]
+         85807cd4  00000000  
+         85807cd8  00000000  
+         85807cdc  00000000  
+         85807ce0  00000000  
+         85807ce4  00000000  
+         85807ce8  00000000  
+         85807cec  00000000  
+         85807cf0  00000001  
+         85807cf4  00000007  
+         85807cf8  0000000a  
+         85807cfc  b66c8b51  /system/lib/libcutils.so (set_sched_policy+132)
+    #00  85807d00  00000003  
+         ........  ........
+    #01  85807d00  00000003  
+         85807d04  85807d10  [stack:735]
+         85807d08  b668c3f1  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+144)
+         85807d0c  c0186201  
+         85807d10  85807d18  [stack:735]
+         85807d14  00000008  
+    #02  85807d18  00000008  
+         85807d1c  00000008  
+         85807d20  01976378  [heap]
+         85807d24  00000100  
+         85807d28  00000000  
+         85807d2c  01976270  [heap]
+         85807d30  019761c8  [heap]
+         85807d34  01976228  [heap]
+         85807d38  00000000  
+         85807d3c  b669a9ec  /system/lib/libbinder.so
+         85807d40  b66b6591  /system/lib/libutils.so
+         85807d44  b668cafb  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+10)
+    #03  85807d48  019761c8  [heap]
+         85807d4c  01976228  [heap]
+         85807d50  00000000  
+         85807d54  b668cb91  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+52)
+    #04  85807d58  019761c8  [heap]
+         85807d5c  00000000  
+         85807d60  01975f48  [heap]
+         85807d64  85807d78  [stack:735]
+         85807d68  00000001  
+         85807d6c  b66909f9  /system/lib/libbinder.so
+    #05  85807d70  01975f48  [heap]
+         85807d74  b66b6a97  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+218)
+    #06  85807d78  01975f48  [heap]
+         85807d7c  b6ef632f  /system/lib/libc.so (dlfree+50)
+         85807d80  01975f48  [heap]
+         85807d84  019750e8  [heap]
+         85807d88  01973a90  [heap]
+         85807d8c  01973a90  [heap]
+         85807d90  00000000  
+         85807d94  b66b69bd  /system/lib/libutils.so (android::Thread::_threadLoop(void*))
+         85807d98  01975f48  [heap]
+         85807d9c  b66b65c9  /system/lib/libutils.so
+    #07  85807da0  00000000  
+         85807da4  85807dd0  [stack:735]
+         85807da8  01975f80  [heap]
+         85807dac  b66b6591  /system/lib/libutils.so
+         85807db0  01973b78  [heap]
+         85807db4  b6ef224c  /system/lib/libc.so (__thread_entry+76)
+    #08  85807db8  01973b78  [heap]
+         85807dbc  01975f80  [heap]
+         85807dc0  85807dd0  [stack:735]
+         85807dc4  00000000  
+         85807dc8  00000078  
+         85807dcc  b6ef23e4  /system/lib/libc.so (pthread_create+244)
+    #09  85807dd0  85807dd0  [stack:735]
+         85807dd4  01975f80  [heap]
+         85807dd8  00000000  
+         85807ddc  00000000  
+         85807de0  00000000  
+         85807de4  33f3a32e  
+         85807de8  00000000  
+         85807dec  00000000  
+         85807df0  00000000  
+         85807df4  00000000  
+         85807df8  00000000  
+         85807dfc  00000000  
+         85807e00  00000000  
+         85807e04  00000000  
+         85807e08  019761c8  [heap]
+         85807e0c  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 712, tid: 753, name: bootanimation
+    r0 85c2684c  r1 00000080  r2 00000000  r3 00000000
+    r4 00000000  r5 00000000  r6 00000002  r7 000000f0
+    r8 00000007  r9 85c645e4  sl 85c00c40  fp 00000007
+    ip 00000000  sp 85659c78  lr b67bb6d0  pc b67ec47c  cpsr 200d0010
+    d0  40b1f923a9e497a8  d1  4024000000000000
+    d2  40e51ea333333333  d3  3fe51eb851eb851f
+    d4  0000000000000000  d5  0000000000000000
+    d6  0000000000000000  d7  04f27ac000000000
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 000000000000ffff
+    d16 0000000000000000  d17 0000000000000000
+    d18 41c3218115800000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 80000011
+
+backtrace:
+    #00  pc 0010847c  /system/lib/libmsc.so
+    #01  pc 000d76cc  /system/lib/libmsc.so
+
+stack:
+         85659c38  00000000  
+         85659c3c  00000000  
+         85659c40  00000000  
+         85659c44  00000000  
+         85659c48  00000000  
+         85659c4c  00000000  
+         85659c50  00000000  
+         85659c54  00000000  
+         85659c58  00000000  
+         85659c5c  00000000  
+         85659c60  00000000  
+         85659c64  00000000  
+         85659c68  00000000  
+         85659c6c  00000000  
+         85659c70  00000000  
+         85659c74  00000000  
+    #00  85659c78  b679a3b0  /system/lib/libmsc.so
+         ........  ........
+    #01  85659c78  b679a3b0  /system/lib/libmsc.so
+         85659c7c  85c2684c  [stack:732]
+         85659c80  00000080  
+         85659c84  00000000  
+         85659c88  00000000  
+         85659c8c  00000000  
+         85659c90  00000000  
+         85659c94  b6799f01  /system/lib/libmsc.so
+         85659c98  00000000  
+         85659c9c  00000000  
+         85659ca0  b67c42e4  /system/lib/libmsc.so
+         85659ca4  85c2684c  [stack:732]
+         85659ca8  00000000  
+         85659cac  ffffffff  
+         85659cb0  ffffffff  
+         85659cb4  ffffffff  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 712, tid: 931, name: bootanimation
+    r0 0197449c  r1 00000080  r2 00000000  r3 00000000
+    r4 0197449c  r5 01974498  r6 00000000  r7 000000f0
+    r8 00038b41  r9 853de000  sl bef77884  fp 854dbd58
+    ip 00000000  sp 854dbce8  lr b6ef3fa0  pc b6f069fc  cpsr 600f0010
+    d0  000000000000000f  d1  0000000000000000
+    d2  0000000000000000  d3  3fe0000000000000
+    d4  3fe0000016694e00  d5  3fdfffffd32d6400
+    d6  0000000000000000  d7  00000000cccccccd
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 3e2e848000000000  d17 3e2e848000000000
+    d18 416312d000000000  d19 0000000000000000
+    d20 401799999999999a  d21 404d800000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 404d800000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 4000000000000000
+    scr 20000010
+
+backtrace:
+    #00  pc 000219fc  /system/lib/libc.so (__futex_syscall3+8)
+    #01  pc 0000ef9c  /system/lib/libc.so (__pthread_cond_timedwait_relative+48)
+    #02  pc 0000effc  /system/lib/libc.so (__pthread_cond_timedwait+64)
+    #03  pc 0002d1ad  /system/bin/bootanimation (wchar_t* std::__add_grouping<wchar_t>(wchar_t*, wchar_t, char const*, unsigned int, wchar_t const*, wchar_t const*)+144)
+    #04  pc 00004508  /system/bin/bootanimation
+
+stack:
+         854dbca8  00000000  
+         854dbcac  00000000  
+         854dbcb0  00000000  
+         854dbcb4  00000000  
+         854dbcb8  00000000  
+         854dbcbc  00000000  
+         854dbcc0  01977fe8  [heap]
+         854dbcc4  01978370  [heap]
+         854dbcc8  00038b41  /system/bin/bootanimation (std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > std::money_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::_M_extract<false>(std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> >, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> >, std::ios_base&, std::_Ios_Iostate&, std::string&) const+1776)
+         854dbccc  01977ff4  [heap]
+         854dbcd0  00038b41  /system/bin/bootanimation (std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > std::money_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::_M_extract<false>(std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> >, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> >, std::ios_base&, std::_Ios_Iostate&, std::string&) const+1776)
+         854dbcd4  0000b3ec  /system/bin/bootanimation
+         854dbcd8  0197449c  [heap]
+         854dbcdc  01974498  [heap]
+         854dbce0  00000000  
+         854dbce4  b6ef3f88  /system/lib/libc.so (__pthread_cond_timedwait_relative+28)
+    #00  854dbce8  00000000  
+         ........  ........
+    #01  854dbce8  00000000  
+         854dbcec  01974498  [heap]
+         854dbcf0  0197449c  [heap]
+         854dbcf4  00038b41  /system/bin/bootanimation (std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > std::money_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::_M_extract<false>(std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> >, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> >, std::ios_base&, std::_Ios_Iostate&, std::string&) const+1776)
+         854dbcf8  01977ff4  [heap]
+         854dbcfc  b6ef4000  /system/lib/libc.so (__pthread_cond_timedwait+68)
+    #02  854dbd00  854dbd18  [stack:931]
+         854dbd04  0000b4c8  /system/bin/bootanimation
+         854dbd08  01977fe8  [heap]
+         854dbd0c  01977fe8  [heap]
+         854dbd10  01978370  [heap]
+         854dbd14  000351b1  /system/bin/bootanimation (wchar_t* std::__add_grouping<wchar_t>(wchar_t*, wchar_t, char const*, unsigned int, wchar_t const*, wchar_t const*)+148)
+    #03  854dbd18  00000000  
+         854dbd1c  0000c50c  /system/bin/bootanimation
+    #04  854dbd20  00000000  
+         854dbd24  00000000  
+         854dbd28  00000000  
+         854dbd2c  00000000  
+         854dbd30  00000000  
+         854dbd34  854dbd4c  [stack:931]
+         854dbd38  00000025  
+         854dbd3c  01974488  [heap]
+         854dbd40  00000000  
+         854dbd44  33f3a32e  
+         854dbd48  01977fe8  [heap]
+         854dbd4c  01974498  [heap]
+         854dbd50  00038b01  /system/bin/bootanimation (std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > std::money_get<wchar_t, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> > >::_M_extract<false>(std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> >, std::istreambuf_iterator<wchar_t, std::char_traits<wchar_t> >, std::ios_base&, std::_Ios_Iostate&, std::string&) const+1712)
+         854dbd54  01974488  [heap]
+         854dbd58  854dbd70  [stack:931]
+         854dbd5c  0000c020  /system/bin/bootanimation
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 712, tid: 932, name: bootanimation
+    r0 85c702ac  r1 00000080  r2 00000000  r3 00000000
+    r4 00000000  r5 00000000  r6 85c00380  r7 000000f0
+    r8 00000007  r9 852e0000  sl 85c74380  fp 00000007
+    ip 00000001  sp 853ddcd4  lr b67bb6d0  pc b67ec47c  cpsr 200d0010
+    d0  0000000000000000  d1  c1162e42fefa39ef
+    d2  bfe62e42fefa39ef  d3  4059000000000000
+    d4  0000000000000000  d5  0000000000000000
+    d6  0000000000000000  d7  04f27ac000000000
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 000000000002986c
+    d16 0000000000000000  d17 0000000000000000
+    d18 41c3218115800000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000011
+
+backtrace:
+    #00  pc 0010847c  /system/lib/libmsc.so
+    #01  pc 000d76cc  /system/lib/libmsc.so
+
+stack:
+         853ddc94  00000001  
+         853ddc98  00000002  
+         853ddc9c  00000001  
+         853ddca0  00000000  
+         853ddca4  00000001  
+         853ddca8  00000001  
+         853ddcac  85c19c08  [stack:732]
+         853ddcb0  b67c4f58  /system/lib/libmsc.so
+         853ddcb4  85c19900  [stack:732]
+         853ddcb8  85c17610  [stack:732]
+         853ddcbc  00000002  
+         853ddcc0  b679a274  /system/lib/libmsc.so
+         853ddcc4  85c2666c  [stack:732]
+         853ddcc8  00000081  
+         853ddccc  00000001  
+         853ddcd0  00000000  
+    #00  853ddcd4  b679a3b0  /system/lib/libmsc.so
+         ........  ........
+    #01  853ddcd4  b679a3b0  /system/lib/libmsc.so
+         853ddcd8  85c702ac  [stack:732]
+         853ddcdc  00000080  
+         853ddce0  00000000  
+         853ddce4  00000000  
+         853ddce8  00000000  
+         853ddcec  00000000  
+         853ddcf0  85c26001  [stack:732]
+         853ddcf4  00000000  
+         853ddcf8  00000000  
+         853ddcfc  b67c42e4  /system/lib/libmsc.so
+         853ddd00  85c702ac  [stack:732]
+         853ddd04  00000000  
+         853ddd08  ffffffff  
+         853ddd0c  ffffffff  
+         853ddd10  ffffffff  

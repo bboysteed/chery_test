@@ -1,0 +1,8 @@
+.idea/
+/venv
+/CRASH-LOG/
+/NORMAL-LOG/
+/LOG/
+/.anr.log/
+/scripts/mobileperf/output/
+/scripts/mobileperf/logs/

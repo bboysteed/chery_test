@@ -1,0 +1,2413 @@
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'Chery/t1a_navi/t1a_navi:4.4.3/2.0.1-rc2/eng.citos-android.20200215.123056:user/dev-keys'
+Revision: '0'
+pid: 29504, tid: 29504, name: kuwo.kwmusiccar  >>> cn.kuwo.kwmusiccar <<<
+signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+    r0 00000000  r1 00007340  r2 00000006  r3 00000000
+    r4 00000006  r5 0000000c  r6 00007340  r7 0000010c
+    r8 66431cd8  r9 62473d7c  sl 414b2428  fp beb4d37c
+    ip beb4d2b8  sp beb4d258  lr 4006d0bd  pc 4007c088  cpsr 000f0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  8000000000000000  d5  0000000000000000
+    d6  000000a000000000  d7  42c800004a31a5e0
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000010
+
+backtrace:
+    #00  pc 00022088  /system/lib/libc.so (tgkill+12)
+    #01  pc 000130b9  /system/lib/libc.so (pthread_kill+48)
+    #02  pc 000132cd  /system/lib/libc.so (raise+10)
+    #03  pc 00012003  /system/lib/libc.so
+    #04  pc 0002193c  /system/lib/libc.so (abort+4)
+    #05  pc 0010bb11  /system/vendor/lib/libp2p.so (__gnu_cxx::__verbose_terminate_handler()+184)
+
+stack:
+         beb4d218  beb4d26c  [stack]
+         beb4d21c  6afa1f7f  /system/vendor/lib/libp2p.so (operator delete(void*)+10)
+         beb4d220  beb4d26c  [stack]
+         beb4d224  6af948f3  /system/vendor/lib/libp2p.so
+         beb4d228  400a4224  /system/lib/libc.so
+         beb4d22c  0000000a  
+         beb4d230  00000008  
+         beb4d234  400a4224  /system/lib/libc.so
+         beb4d238  00000001  
+         beb4d23c  400a4224  /system/lib/libc.so
+         beb4d240  400a4224  /system/lib/libc.so
+         beb4d244  0000000b  
+         beb4d248  6afd489c  /system/vendor/lib/libp2p.so
+         beb4d24c  400803e5  /system/lib/libc.so
+         beb4d250  400a41d0  /system/lib/libc.so
+         beb4d254  667e5008  [anon:libc_malloc]
+    #00  beb4d258  00000006  
+         beb4d25c  0000000c  
+         beb4d260  00007340  
+         beb4d264  beb4d2b8  [stack]
+         beb4d268  beb4d2b8  [stack]
+         beb4d26c  4006d0bd  /system/lib/libc.so (pthread_kill+52)
+    #01  beb4d270  00000006  
+         beb4d274  00000000  
+         beb4d278  6ab40ac4  [anon:libc_malloc]
+         beb4d27c  4006d2d1  /system/lib/libc.so (raise+14)
+    #02  beb4d280  beb4d28c  [stack]
+         beb4d284  4006c007  /system/lib/libc.so
+    #03  beb4d288  400a4224  /system/lib/libc.so
+         beb4d28c  ffffffdf  
+         beb4d290  0000000a  
+         beb4d294  00000000  
+         beb4d298  400a4224  /system/lib/libc.so
+         beb4d29c  400b2324  
+         beb4d2a0  0000000a  
+         beb4d2a4  00000001  
+         beb4d2a8  400a417c  /system/lib/libc.so
+         beb4d2ac  4007b940  /system/lib/libc.so (__pthread_clone)
+    #04  beb4d2b0  00007340  
+         beb4d2b4  6afa5b15  /system/vendor/lib/libp2p.so (__gnu_cxx::__verbose_terminate_handler()+188)
+    #05  beb4d2b8  6afa300d  /system/vendor/lib/libp2p.so
+         beb4d2bc  00000000  
+         beb4d2c0  beb4d368  [stack]
+         beb4d2c4  6ab40a50  [anon:libc_malloc]
+         beb4d2c8  6afd4690  /system/vendor/lib/libp2p.so
+         beb4d2cc  beb4d348  [stack]
+         beb4d2d0  beb4d2d8  [stack]
+         beb4d2d4  6afa2f87  /system/vendor/lib/libp2p.so (__cxxabiv1::__terminate(void (*)())+6)
+         beb4d2d8  6ab40a50  [anon:libc_malloc]
+         beb4d2dc  6afd4690  /system/vendor/lib/libp2p.so
+         beb4d2e0  beb4d2e8  [stack]
+         beb4d2e4  6afa2fb9  /system/vendor/lib/libp2p.so (std::terminate()+16)
+         beb4d2e8  beb4d2f0  [stack]
+         beb4d2ec  6afa30a9  /system/vendor/lib/libp2p.so (__cxa_throw+100)
+         beb4d2f0  6aff60d0  
+         beb4d2f4  6ab40aa8  [anon:libc_malloc]
+
+memory near r1:
+    00007320 ffffffff ffffffff ffffffff ffffffff  
+    00007330 ffffffff ffffffff ffffffff ffffffff  
+    00007340 ffffffff ffffffff ffffffff ffffffff  
+    00007350 ffffffff ffffffff ffffffff ffffffff  
+    00007360 ffffffff ffffffff ffffffff ffffffff  
+    00007370 ffffffff ffffffff ffffffff ffffffff  
+    00007380 ffffffff ffffffff ffffffff ffffffff  
+    00007390 ffffffff ffffffff ffffffff ffffffff  
+    000073a0 ffffffff ffffffff ffffffff ffffffff  
+    000073b0 ffffffff ffffffff ffffffff ffffffff  
+    000073c0 ffffffff ffffffff ffffffff ffffffff  
+    000073d0 ffffffff ffffffff ffffffff ffffffff  
+    000073e0 ffffffff ffffffff ffffffff ffffffff  
+    000073f0 ffffffff ffffffff ffffffff ffffffff  
+    00007400 ffffffff ffffffff ffffffff ffffffff  
+    00007410 ffffffff ffffffff ffffffff ffffffff  
+
+memory near r6:
+    00007320 ffffffff ffffffff ffffffff ffffffff  
+    00007330 ffffffff ffffffff ffffffff ffffffff  
+    00007340 ffffffff ffffffff ffffffff ffffffff  
+    00007350 ffffffff ffffffff ffffffff ffffffff  
+    00007360 ffffffff ffffffff ffffffff ffffffff  
+    00007370 ffffffff ffffffff ffffffff ffffffff  
+    00007380 ffffffff ffffffff ffffffff ffffffff  
+    00007390 ffffffff ffffffff ffffffff ffffffff  
+    000073a0 ffffffff ffffffff ffffffff ffffffff  
+    000073b0 ffffffff ffffffff ffffffff ffffffff  
+    000073c0 ffffffff ffffffff ffffffff ffffffff  
+    000073d0 ffffffff ffffffff ffffffff ffffffff  
+    000073e0 ffffffff ffffffff ffffffff ffffffff  
+    000073f0 ffffffff ffffffff ffffffff ffffffff  
+    00007400 ffffffff ffffffff ffffffff ffffffff  
+    00007410 ffffffff ffffffff ffffffff ffffffff  
+
+memory near r8:
+    66431cb8 6574616c 00000000 756d0000 00000000  
+    66431cc8 00000000 00000000 00000001 0000002b  
+    66431cd8 6afedf28 00000002 00000000 00000000  
+    66431ce8 00000000 00000000 00000000 00000000  
+    66431cf8 6ab42240 0000001b 6afece58 6af0702d  
+    66431d08 6ab3f250 6370002f 00000018 0000007b  
+    66431d18 6aff07c0 400a8200 3842eb01 6ab3efd0  
+    66431d28 6ab407ac 66431c68 00000000 00000000  
+    66431d38 00000000 0000000b 6ab407ac 00000000  
+    66431d48 2f650001 00000000 00000000 00000000  
+    66431d58 37370001 00000000 fffffffe 00000000  
+    66431d68 00000000 00000000 ffff0001 00000000  
+    66431d78 fffffffe 00000000 37373738 2e343936  
+    66431d88 00000078 00000043 6aff0770 00000002  
+    66431d98 6ab3f3e0 66431d00 6ab40558 00000002  
+    66431da8 00490053 00000000 00000000 00000000  
+
+memory near r9:
+    62473d5c 0000000a 62473d94 62473d94 62473d94  
+    62473d6c 6a82e4e2 627cba08 00000006 00000000  
+    62473d7c 00000000 62473db8 63cec330 627cb630  
+    62473d8c 6a82e4e2 00000000 00000000 00000000  
+    62473d9c 00000000 41891d58 62473e04 63ce96f0  
+    62473dac 62559fc8 63cec330 00000000 41891d58  
+    62473dbc 41891d58 41892010 4186ba18 4186d6a8  
+    62473dcc 4186d600 41872258 4186c090 418709c8  
+    62473ddc 00000000 4186f790 00000000 4186ba18  
+    62473dec 4186dca8 62473e20 63ce8628 625596d0  
+    62473dfc 63ce96f0 00000000 4186ba18 4186dca8  
+    62473e0c 62473e64 63ce7bb8 625b4440 63ce8628  
+    62473e1c 00000000 62473e84 63eed8aa 624dc420  
+    62473e2c 4186dca8 4186ba18 00000000 00000000  
+    62473e3c 00000000 00000040 00000000 4186bb18  
+    62473e4c 4186dcc8 62473e84 63eed924 62510e08  
+
+memory near sl:
+    414b2408 00000000 00000800 6246b008 0000045b  
+    414b2418 63529ae0 62473d7c 627cb630 6aac5000  
+    414b2428 53cf560e 00000000 beb4d4c0 00000000  
+    414b2438 beb4d514 00000001 00000000 414d0d40  
+    414b2448 00000000 00000000 6193f370 6246e300  
+    414b2458 00000000 00000000 00000001 00006000  
+    414b2468 00000000 40045154 414d0d40 414d5c00  
+    414b2478 00000000 414d9cfc 414d9d70 414d9c20  
+    414b2488 414d9c40 414d9c9c 00000000 00000000  
+    414b2498 666460d0 00000028 00000000 00000000  
+    414b24a8 00000000 00000006 00002000 4156491c  
+    414b24b8 00000000 624bc758 00000007 66424f70  
+    414b24c8 00000001 00000080 00000200 00000000  
+    414b24d8 00000001 63ef15de 63ef15de 00000001  
+    414b24e8 63d2dcfa 624cd148 f6febfba 00000000  
+    414b24f8 00000000 fa762dc8 eca83972 fca835e1  
+
+memory near fp:
+    beb4d35c 00000000 62473d84 414d0bd0 62473d7c  
+    beb4d36c 00000001 6a97d5b4 418912f0 00000020  
+    beb4d37c 41501127 62473d7c 6a97d5b2 6aef84cd  
+    beb4d38c 414b2428 6ab40aa8 6ab40a28 42700019  
+    beb4d39c 00000000 6a612118 400a8384 6aef84cd  
+    beb4d3ac 4006b32f 400a4000 6ab40a80 00000000  
+    beb4d3bc 6a612118 00000000 40067ce5 66849128  
+    beb4d3cc 41502d53 414b2418 6ab40a28 00000000  
+    beb4d3dc 4006b32f 400a4000 41570ae8 41570ae8  
+    beb4d3ec 418709c8 414b2418 40067ce5 00000001  
+    beb4d3fc 00000001 414b2f98 6364938c beb4d474  
+    beb4d40c 627cba1c 00000001 418912f0 00000002  
+    beb4d41c 00000001 627cba08 6a977c6e beb4d474  
+    beb4d42c 00000038 00000001 4151ee37 6a977c6e  
+    beb4d43c 6a6d38c8 418912f0 6a977c6e 6aac5000  
+    beb4d44c 00005105 00000002 06e4e135 0000000f  
+
+memory near ip:
+    beb4d298 400a4224 400b2324 0000000a 00000001  
+    beb4d2a8 400a417c 4007b940 00007340 6afa5b15  
+    beb4d2b8 6afa300d 00000000 beb4d368 6ab40a50  
+    beb4d2c8 6afd4690 beb4d348 beb4d2d8 6afa2f87  
+    beb4d2d8 6ab40a50 6afd4690 beb4d2e8 6afa2fb9  
+    beb4d2e8 beb4d2f0 6afa30a9 6aff60d0 6ab40aa8  
+    beb4d2f8 beb4d300 6af751fb 415660d0 6ab40ac4  
+    beb4d308 00000000 beb4d34c 00000000 6af95765  
+    beb4d318 00000000 00000000 beb4d34c beb4d348  
+    beb4d328 00000000 6af957df 6aef9c23 414b0f58  
+    beb4d338 6663ebb8 6aef84fd 666444b8 00000000  
+    beb4d348 00000020 400808a7 418912f0 627cba08  
+    beb4d358 414b2418 00000000 62473d84 414d0bd0  
+    beb4d368 62473d7c 00000001 6a97d5b4 418912f0  
+    beb4d378 00000020 41501127 62473d7c 6a97d5b2  
+    beb4d388 6aef84cd 414b2428 6ab40aa8 6ab40a28  
+
+memory near sp:
+    beb4d238 00000001 400a4224 400a4224 0000000b  
+    beb4d248 6afd489c 400803e5 400a41d0 667e5008  
+    beb4d258 00000006 0000000c 00007340 beb4d2b8  
+    beb4d268 beb4d2b8 4006d0bd 00000006 00000000  
+    beb4d278 6ab40ac4 4006d2d1 beb4d28c 4006c007  
+    beb4d288 400a4224 ffffffdf 0000000a 00000000  
+    beb4d298 400a4224 400b2324 0000000a 00000001  
+    beb4d2a8 400a417c 4007b940 00007340 6afa5b15  
+    beb4d2b8 6afa300d 00000000 beb4d368 6ab40a50  
+    beb4d2c8 6afd4690 beb4d348 beb4d2d8 6afa2f87  
+    beb4d2d8 6ab40a50 6afd4690 beb4d2e8 6afa2fb9  
+    beb4d2e8 beb4d2f0 6afa30a9 6aff60d0 6ab40aa8  
+    beb4d2f8 beb4d300 6af751fb 415660d0 6ab40ac4  
+    beb4d308 00000000 beb4d34c 00000000 6af95765  
+    beb4d318 00000000 00000000 beb4d34c beb4d348  
+    beb4d328 00000000 6af957df 6aef9c23 414b0f58  
+
+code around pc:
+    4007c068 e8bd00f0 e3700a01 912fff1e e2600000  
+    4007c078 ea006f07 e92d50f0 e3a07f43 ef000000  
+    4007c088 e8bd50f0 e3700a01 912fff1e e2600000  
+    4007c098 ea006eff e92d50f0 e3a070ee ef000000  
+    4007c0a8 e8bd50f0 e3700a01 912fff1e e2600000  
+    4007c0b8 ea006ef7 e1520003 8a006efd e92d4011  
+    4007c0c8 e24dd01c f5d0f000 f5d1f000 f5d1f020  
+    4007c0d8 e3520004 3a0000b7 e2613000 e2133003  
+    4007c0e8 0a000007 e1b0cf83 e0422003 44d13001  
+    4007c0f8 24d14001 24d1c001 44c03001 24c04001  
+    4007c108 24c0c001 e020c001 e31c0003 1a00002b  
+    4007c118 e88d0fe0 e2603000 e213301c 0a00000a  
+    4007c128 e1530002 8202301c e1b0ce03 28b100f0  
+    4007c138 48b10300 28a000f0 48a00300 e3130004  
+    4007c148 1491a004 1480a004 e0422003 e2522020  
+    4007c158 3a000008 e3c1c01f e28cc040 e8b10ff0  
+
+code around lr:
+    4006d09c 447b4b13 42b3e010 6a1ed10e 44784811  
+    4006d0ac ec84f7fb ea0ef00d 46224631 efe0f00e  
+    4006d0bc d00a3001 e00b2400 2b00681b 480ad1eb  
+    4006d0cc 44782403 ec72f7fb f001e002 6804fa23  
+    4006d0dc fa20f001 46206005 bf00bd70 0003b306  
+    4006d0ec 0003b2fa 0003b2f2 0003b2ce bf7ef7ff  
+    4006d0fc 4a3e4b3d e92d447b b08b43f0 4606589c  
+    4006d10c 6823460d 930946a1 fa04f001 8000f8d0  
+    4006d11c d0482d00 f0104628 280ff82d d8444604  
+    4006d12c ffe4f7ff d1064286 4629200f e8d8f00d  
+    4006d13c d03c2800 482ee02e f7fb4478 482debb6  
+    4006d14c e0154478 d11342b0 482b6a06 f7fb4478  
+    4006d15c 4a2aec2e 46332120 a801447a fb4ef013  
+    4006d16c a8012101 fe68f01a 46061c42 e011d104  
+    4006d17c 28006800 e02cd1e6 46294630 f00d4622  
+    4006d18c 1c43e914 d11e4607 f9c4f001 29046801  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29507, name: GC
+    r0 414b23fc  r1 00000080  r2 fffffffe  r3 66207d40
+    r4 414b23fc  r5 414b23f8  r6 fffffffe  r7 000000f0
+    r8 41566100  r9 41566100  sl 414b23f0  fp 400a62ec
+    ip 66207d40  sp 66207d28  lr 40068fa0  pc 4007b9fc  cpsr 600f0010
+    d0  4a88a0004dbcc406  d1  0000005842b0d960
+    d2  0000000000000000  d3  0000000000000000
+    d4  0000000000000000  d5  0000000000000000
+    d6  3f00000000000000  d7  42c800004a719ec0
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 000000000000001c  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 80000010
+
+backtrace:
+    #00  pc 000219fc  /system/lib/libc.so (__futex_syscall3+8)
+    #01  pc 0000ef9c  /system/lib/libc.so (__pthread_cond_timedwait_relative+48)
+    #02  pc 0000effc  /system/lib/libc.so (__pthread_cond_timedwait+64)
+    #03  pc 000528d9  /system/lib/libdvm.so (dvmRelativeCondWait(pthread_cond_t*, pthread_mutex_t*, long long, int)+24)
+    #04  pc 0007276f  /system/lib/libdvm.so
+    #05  pc 00054969  /system/lib/libdvm.so
+    #06  pc 0000d248  /system/lib/libc.so (__thread_entry+72)
+    #07  pc 0000d3e0  /system/lib/libc.so (pthread_create+240)
+
+stack:
+         66207ce8  00000000  
+         66207cec  000003e8  
+         66207cf0  00000000  
+         66207cf4  66207d58  [stack:29507]
+         66207cf8  06c007c4  
+         66207cfc  00001388  
+         66207d00  00000000  
+         66207d04  40095db8  /system/lib/libc.so (__gnu_ldivmod_helper+24)
+         66207d08  00000000  
+         66207d0c  00004806  
+         66207d10  0000480b  
+         66207d14  7ffffffe  
+         66207d18  414b23fc  [anon:libc_malloc]
+         66207d1c  414b23f8  [anon:libc_malloc]
+         66207d20  fffffffe  
+         66207d24  40068f88  /system/lib/libc.so (__pthread_cond_timedwait_relative+28)
+    #00  66207d28  00000001  
+         ........  ........
+    #01  66207d28  00000001  
+         66207d2c  414b23f8  [anon:libc_malloc]
+         66207d30  414b23fc  [anon:libc_malloc]
+         66207d34  00000001  
+         66207d38  41566100  
+         66207d3c  40069000  /system/lib/libc.so (__pthread_cond_timedwait+68)
+    #02  66207d40  00000004  
+         66207d44  3b9abf95  
+         66207d48  41566100  
+         66207d4c  414b23f8  [anon:libc_malloc]
+         66207d50  414b23fc  [anon:libc_malloc]
+         66207d54  415058dd  /system/lib/libdvm.so (dvmRelativeCondWait(pthread_cond_t*, pthread_mutex_t*, long long, int)+28)
+    #03  66207d58  0000480b  
+         66207d5c  06c007c4  
+         66207d60  00001388  
+         66207d64  4155fc74  /system/lib/libdvm.so
+         66207d68  00000000  
+         66207d6c  41525773  /system/lib/libdvm.so
+    #04  66207d70  00000000  
+         66207d74  00000000  
+         66207d78  41525731  /system/lib/libdvm.so
+         66207d7c  6387cf28  [anon:libc_malloc]
+         66207d80  415641f0  /system/lib/libdvm.so
+         66207d84  beb4d4e0  [stack]
+         66207d88  6387cf28  [anon:libc_malloc]
+         66207d8c  4150791d  /system/lib/libdvm.so
+         66207d90  6610a000  
+         66207d94  4150796b  /system/lib/libdvm.so
+    #05  66207d98  6387cf28  [anon:libc_malloc]
+         66207d9c  00010002  
+         66207da0  69fb6148  [anon:libc_malloc]
+         66207da4  41579880  /dev/ashmem/dalvik-zygote (deleted)
+         66207da8  66207dd0  [stack:29507]
+         66207dac  6642b978  [anon:libc_malloc]
+         66207db0  4150791d  /system/lib/libdvm.so
+         66207db4  4006724c  /system/lib/libc.so (__thread_entry+76)
+    #06  66207db8  6387cf28  [anon:libc_malloc]
+         66207dbc  6642b978  [anon:libc_malloc]
+         66207dc0  66207dd0  [stack:29507]
+         66207dc4  00000016  
+         66207dc8  00000078  
+         66207dcc  400673e4  /system/lib/libc.so (pthread_create+244)
+    #07  66207dd0  66207dd0  [stack:29507]
+         66207dd4  6642b978  [anon:libc_malloc]
+         66207dd8  00000000  
+         66207ddc  00000000  
+         66207de0  00000000  
+         66207de4  06e4e135  
+         66207de8  00000000  
+         66207dec  00000000  
+         66207df0  00000000  
+         66207df4  00000000  
+         66207df8  00000000  
+         66207dfc  00000000  
+         66207e00  00000000  
+         66207e04  00000000  
+         66207e08  00000000  
+         66207e0c  66420ef0  [anon:libc_malloc]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29509, name: Signal Catcher
+    r0 fffffffc  r1 00000000  r2 00000000  r3 00000008
+    r4 6630bd08  r5 6630bd48  r6 beb4d4f0  r7 000000b1
+    r8 64861120  r9 4155fc74  sl 41564694  fp 41541cdc
+    ip 6630bd44  sp 6630bd08  lr 4006d429  pc 4007b268  cpsr 200a0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  0000000000000000  d5  0000000000000000
+    d6  3f00000000000000  d7  42c800004a2d3500
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 000000000000001c  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 80000010
+
+backtrace:
+    #00  pc 00021268  /system/lib/libc.so (__rt_sigtimedwait+12)
+    #01  pc 00013425  /system/lib/libc.so (sigwait+24)
+    #02  pc 00051f4f  /system/lib/libdvm.so
+    #03  pc 00054969  /system/lib/libdvm.so
+    #04  pc 0000d248  /system/lib/libc.so (__thread_entry+72)
+    #05  pc 0000d3e0  /system/lib/libc.so (pthread_create+240)
+
+stack:
+         6630bcc8  00000000  
+         6630bccc  00000000  
+         6630bcd0  00000000  
+         6630bcd4  00000000  
+         6630bcd8  6630bd68  [stack:29509]
+         6630bcdc  00000000  
+         6630bce0  64861120  [anon:libc_malloc]
+         6630bce4  66311fc4  
+         6630bce8  00000000  
+         6630bcec  6630bd68  [stack:29509]
+         6630bcf0  00000000  
+         6630bcf4  41513587  /system/lib/libdvm.so (dvmCallMethodV(Thread*, Method const*, Object*, bool, JValue*, std::__va_list)+346)
+         6630bcf8  41543239  /system/lib/libdvm.so
+         6630bcfc  00000000  
+         6630bd00  00000000  
+         6630bd04  6630bca8  [stack:29509]
+    #00  6630bd08  00000204  
+         ........  ........
+    #01  6630bd08  00000204  
+         6630bd0c  00000000  
+         6630bd10  fffffea0  
+         6630bd14  69fb6320  [anon:libc_malloc]
+         6630bd18  415641f0  /system/lib/libdvm.so
+         6630bd1c  41504f53  /system/lib/libdvm.so
+    #02  6630bd20  00000001  
+         6630bd24  00000000  
+         6630bd28  6247e658  /dev/ashmem/dalvik-LinearAlloc (deleted)
+         6630bd2c  6246dd70  [anon:libc_malloc]
+         6630bd30  6486148c  [anon:libc_malloc]
+         6630bd34  4150499f  /system/lib/libdvm.so (dvmRemoveFromReferenceTable(ReferenceTable*, Object**, Object*)+8)
+         6630bd38  64861120  [anon:libc_malloc]
+         6630bd3c  41508947  /system/lib/libdvm.so (dvmReleaseTrackedAlloc+30)
+         6630bd40  41866ff0  /dev/ashmem/dalvik-heap (deleted)
+         6630bd44  00000204  
+         6630bd48  ffffffe0  
+         6630bd4c  64861120  [anon:libc_malloc]
+         6630bd50  415641f0  /system/lib/libdvm.so
+         6630bd54  41506e0d  /system/lib/libdvm.so (dvmAttachCurrentThread(JavaVMAttachArgs const*, bool)+388)
+         6630bd58  41579880  /dev/ashmem/dalvik-zygote (deleted)
+         6630bd5c  41866ff0  /dev/ashmem/dalvik-heap (deleted)
+         ........  ........
+    #03  6630bd98  69fb6320  [anon:libc_malloc]
+         6630bd9c  00010002  
+         6630bda0  66421698  [anon:libc_malloc]
+         6630bda4  41579880  /dev/ashmem/dalvik-zygote (deleted)
+         6630bda8  6630bdd0  [stack:29509]
+         6630bdac  66431708  [anon:libc_malloc]
+         6630bdb0  4150791d  /system/lib/libdvm.so
+         6630bdb4  4006724c  /system/lib/libc.so (__thread_entry+76)
+    #04  6630bdb8  69fb6320  [anon:libc_malloc]
+         6630bdbc  66431708  [anon:libc_malloc]
+         6630bdc0  6630bdd0  [stack:29509]
+         6630bdc4  00000016  
+         6630bdc8  00000078  
+         6630bdcc  400673e4  /system/lib/libc.so (pthread_create+244)
+    #05  6630bdd0  6630bdd0  [stack:29509]
+         6630bdd4  66431708  [anon:libc_malloc]
+         6630bdd8  00000000  
+         6630bddc  00000000  
+         6630bde0  00000000  
+         6630bde4  06e4e135  
+         6630bde8  00000000  
+         6630bdec  00000000  
+         6630bdf0  00000000  
+         6630bdf4  00000000  
+         6630bdf8  00000000  
+         6630bdfc  00000000  
+         6630be00  00000000  
+         6630be04  00000000  
+         6630be08  00000000  
+         6630be0c  64861120  [anon:libc_malloc]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29510, name: Compiler
+    r0 41564704  r1 00000080  r2 ffffffd0  r3 00000000
+    r4 41564704  r5 415646fc  r6 ffffffd0  r7 000000f0
+    r8 4150791d  r9 66312000  sl 415646f8  fp 400a62ec
+    ip 00000000  sp 6640fc10  lr 40068fa0  pc 4007b9fc  cpsr 600a0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  0000000000000000  d5  0000000000000008
+    d6  ffc3ffffffffffff  d7  0000000000008003
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000001000  d17 0004000000000020
+    d18 0004000000001020  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 80000010
+
+backtrace:
+    #00  pc 000219fc  /system/lib/libc.so (__futex_syscall3+8)
+    #01  pc 0000ef9c  /system/lib/libc.so (__pthread_cond_timedwait_relative+48)
+    #02  pc 0000effc  /system/lib/libc.so (__pthread_cond_timedwait+64)
+    #03  pc 00073cff  /system/lib/libdvm.so
+    #04  pc 00054969  /system/lib/libdvm.so
+    #05  pc 0000d248  /system/lib/libc.so (__thread_entry+72)
+    #06  pc 0000d3e0  /system/lib/libc.so (pthread_create+240)
+
+stack:
+         6640fbd0  00000000  
+         6640fbd4  00000000  
+         6640fbd8  00000000  
+         6640fbdc  00000000  
+         6640fbe0  00000000  
+         6640fbe4  00000000  
+         6640fbe8  00000000  
+         6640fbec  00000000  
+         6640fbf0  00000000  
+         6640fbf4  00000000  
+         6640fbf8  00000000  
+         6640fbfc  00000000  
+         6640fc00  41564704  /system/lib/libdvm.so
+         6640fc04  415646fc  /system/lib/libdvm.so
+         6640fc08  ffffffd0  
+         6640fc0c  40068f88  /system/lib/libc.so (__pthread_cond_timedwait_relative+28)
+    #00  6640fc10  00000000  
+         ........  ........
+    #01  6640fc10  00000000  
+         6640fc14  415646fc  /system/lib/libdvm.so
+         6640fc18  41564704  /system/lib/libdvm.so
+         6640fc1c  666460d0  [anon:libc_malloc]
+         6640fc20  00001000  
+         6640fc24  40069000  /system/lib/libc.so (__pthread_cond_timedwait+68)
+    #02  6640fc28  415646c8  /system/lib/libdvm.so
+         6640fc2c  00000001  
+         6640fc30  00000000  
+         6640fc34  415646c8  /system/lib/libdvm.so
+         6640fc38  00000001  
+         6640fc3c  41526d03  /system/lib/libdvm.so
+    #03  6640fc40  0000000a  
+         6640fc44  414e0fa4  /system/lib/libdvm.so (dvmMterpStd(Thread*)+80)
+         6640fc48  00000000  
+         6640fc4c  4155fc74  /system/lib/libdvm.so
+         6640fc50  415528dc  /system/lib/libdvm.so
+         6640fc54  41541cdc  /system/lib/libdvm.so
+         6640fc58  63ef15de  /system/framework/framework.odex
+         6640fc5c  00000002  
+         6640fc60  6663e270  [anon:libc_malloc]
+         6640fc64  6ad24b8f  /dev/ashmem/dalvik-jit-code-cache (deleted)
+         6640fc68  00000003  
+         6640fc6c  0000000a  
+         6640fc70  00000000  
+         6640fc74  414b2418  [anon:libc_malloc]
+         6640fc78  00000000  
+         6640fc7c  6640fc80  [stack:29510]
+         ........  ........
+    #04  6640fd98  664216d0  [anon:libc_malloc]
+         6640fd9c  00010002  
+         6640fda0  66431dd0  [anon:libc_malloc]
+         6640fda4  41579880  /dev/ashmem/dalvik-zygote (deleted)
+         6640fda8  6640fdd0  [stack:29510]
+         6640fdac  41569050  [anon:libc_malloc]
+         6640fdb0  4150791d  /system/lib/libdvm.so
+         6640fdb4  4006724c  /system/lib/libc.so (__thread_entry+76)
+    #05  6640fdb8  664216d0  [anon:libc_malloc]
+         6640fdbc  41569050  [anon:libc_malloc]
+         6640fdc0  6640fdd0  [stack:29510]
+         6640fdc4  00000016  
+         6640fdc8  00000078  
+         6640fdcc  400673e4  /system/lib/libc.so (pthread_create+244)
+    #06  6640fdd0  6640fdd0  [stack:29510]
+         6640fdd4  41569050  [anon:libc_malloc]
+         6640fdd8  00000000  
+         6640fddc  00000000  
+         6640fde0  00000000  
+         6640fde4  06e4e135  
+         6640fde8  00000000  
+         6640fdec  00000000  
+         6640fdf0  00000000  
+         6640fdf4  00000000  
+         6640fdf8  00000000  
+         6640fdfc  00000000  
+         6640fe00  00000000  
+         6640fe04  00000000  
+         6640fe08  00000000  
+         6640fe0c  6347d810  [anon:libc_malloc]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29511, name: ReferenceQueueD
+    r0 63885bd0  r1 00000080  r2 fffffffc  r3 00000000
+    r4 63885bd0  r5 63885bc0  r6 fffffffc  r7 000000f0
+    r8 00000000  r9 00000000  sl 00000000  fp 41867168
+    ip 00000000  sp 66535bc8  lr 40068fa0  pc 4007b9fc  cpsr 600d0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  0000000000000000  d5  0000000000000000
+    d6  3f00000000000000  d7  42c800004a2d3500
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 000000000000001c  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 80000010
+
+backtrace:
+    #00  pc 000219fc  /system/lib/libc.so (__futex_syscall3+8)
+    #01  pc 0000ef9c  /system/lib/libc.so (__pthread_cond_timedwait_relative+48)
+    #02  pc 0000effc  /system/lib/libc.so (__pthread_cond_timedwait+64)
+    #03  pc 00052d6f  /system/lib/libdvm.so
+    #04  pc 0006764d  /system/lib/libdvm.so
+    #05  pc 00026fe0  /system/lib/libdvm.so
+    #06  pc 0002dfa0  /system/lib/libdvm.so (dvmMterpStd(Thread*)+76)
+    #07  pc 0002b638  /system/lib/libdvm.so (dvmInterpret(Thread*, Method const*, JValue*)+184)
+    #08  pc 0006057d  /system/lib/libdvm.so (dvmCallMethodV(Thread*, Method const*, Object*, bool, JValue*, std::__va_list)+336)
+    #09  pc 000605a1  /system/lib/libdvm.so (dvmCallMethod(Thread*, Method const*, Object*, JValue*, ...)+20)
+    #10  pc 00055287  /system/lib/libdvm.so
+    #11  pc 0000d248  /system/lib/libc.so (__thread_entry+72)
+    #12  pc 0000d3e0  /system/lib/libc.so (pthread_create+240)
+
+stack:
+         66535b88  00000000  
+         66535b8c  00000000  
+         66535b90  00000000  
+         66535b94  00000000  
+         66535b98  00000000  
+         66535b9c  00000000  
+         66535ba0  00000000  
+         66535ba4  00000000  
+         66535ba8  00000000  
+         66535bac  00000000  
+         66535bb0  00000000  
+         66535bb4  63885bc0  [anon:libc_malloc]
+         66535bb8  63885bd0  [anon:libc_malloc]
+         66535bbc  63885bc0  [anon:libc_malloc]
+         66535bc0  fffffffc  
+         66535bc4  40068f88  /system/lib/libc.so (__pthread_cond_timedwait_relative+28)
+    #00  66535bc8  00000000  
+         ........  ........
+    #01  66535bc8  00000000  
+         66535bcc  63885bc0  [anon:libc_malloc]
+         66535bd0  63885bd0  [anon:libc_malloc]
+         66535bd4  63885830  [anon:libc_malloc]
+         66535bd8  6387cf48  [anon:libc_malloc]
+         66535bdc  40069000  /system/lib/libc.so (__pthread_cond_timedwait+68)
+    #02  66535be0  63885bc0  [anon:libc_malloc]
+         66535be4  00000000  
+         66535be8  63885bc0  [anon:libc_malloc]
+         66535bec  63885bc0  [anon:libc_malloc]
+         66535bf0  00000000  
+         66535bf4  41505d73  /system/lib/libdvm.so
+    #03  66535bf8  63885830  [anon:libc_malloc]
+         66535bfc  6387cf48  [anon:libc_malloc]
+         66535c00  66437f74  
+         66535c04  66437f78  
+         66535c08  4156f640  /dev/ashmem/dalvik-zygote (deleted)
+         66535c0c  4156a890  /dev/ashmem/dalvik-zygote (deleted)
+         66535c10  414d0d40  /system/lib/libdvm.so
+         66535c14  00000000  
+         66535c18  66437f60  
+         66535c1c  4151a651  /system/lib/libdvm.so
+    #04  66535c20  00000000  
+         66535c24  00000001  
+         66535c28  00000000  
+         66535c2c  00000000  
+         66535c30  63504ea6  /system/framework/core.odex
+         66535c34  66437f98  
+         66535c38  63885830  [anon:libc_malloc]
+         66535c3c  414d9fe4  /system/lib/libdvm.so
+    #05  66535c40  00000000  
+         66535c44  63885830  [anon:libc_malloc]
+         66535c48  414e0f54  /system/lib/libdvm.so (dvmMterpStd(Thread*))
+         66535c4c  00000000  
+         66535c50  66535d78  [stack:29511]
+         66535c54  63885830  [anon:libc_malloc]
+         66535c58  66535c94  [stack:29511]
+         66535c5c  6247eeb0  /dev/ashmem/dalvik-LinearAlloc (deleted)
+         66535c60  41867168  /dev/ashmem/dalvik-heap (deleted)
+         66535c64  414e0fa4  /system/lib/libdvm.so (dvmMterpStd(Thread*)+80)
+    #06  66535c68  00000000  
+         66535c6c  00000000  
+         66535c70  00000000  
+         66535c74  00000000  
+         66535c78  00000000  
+         66535c7c  fffffea0  
+         66535c80  414e0f54  /system/lib/libdvm.so (dvmMterpStd(Thread*))
+         66535c84  414de63c  /system/lib/libdvm.so (dvmInterpret(Thread*, Method const*, JValue*)+188)
+    #07  66535c88  00000000  
+         66535c8c  00000000  
+         66535c90  00000000  
+         66535c94  00000000  
+         66535c98  66437fe4  
+         66535c9c  00000000  
+         66535ca0  00000000  
+         66535ca4  00000000  
+         66535ca8  00000000  
+         66535cac  00000000  
+         66535cb0  00000000  
+         66535cb4  00000000  
+         66535cb8  00000000  
+         66535cbc  00000000  
+         66535cc0  00000000  
+         66535cc4  00000000  
+         ........  ........
+    #08  66535d18  0000001d  
+         66535d1c  0000001c  
+         66535d20  0000001c  
+         66535d24  63885830  [anon:libc_malloc]
+         66535d28  400a8384  
+         66535d2c  41522acf  /system/lib/libdvm.so (os_changeThreadPriority(Thread*, int)+82)
+         66535d30  66438000  
+         66535d34  66535d78  [stack:29511]
+         66535d38  415641f0  /system/lib/libdvm.so
+         66535d3c  400a8384  
+         66535d40  41564500  /system/lib/libdvm.so
+         66535d44  415644fc  /system/lib/libdvm.so
+         66535d48  66438000  
+         66535d4c  beb4d604  [stack]
+         66535d50  400a62ec  /system/lib/libc.so
+         66535d54  415135a5  /system/lib/libdvm.so (dvmCallMethod(Thread*, Method const*, Object*, JValue*, ...)+24)
+    #09  66535d58  66535d78  [stack:29511]
+         66535d5c  66535d78  [stack:29511]
+         66535d60  63885830  [anon:libc_malloc]
+         66535d64  66535d78  [stack:29511]
+         66535d68  400a8384  
+         66535d6c  63885830  [anon:libc_malloc]
+         66535d70  4150828b  /system/lib/libdvm.so
+         66535d74  66535d78  [stack:29511]
+    #10  66535d78  00000003  
+         66535d7c  63885c88  [anon:libc_malloc]
+         66535d80  00000000  
+         66535d84  414ac9f8  [anon:libc_malloc]
+         66535d88  63885830  [anon:libc_malloc]
+         66535d8c  400671c4  /system/lib/libc.so (__init_tls+124)
+         66535d90  00000000  
+         66535d94  414ac9f4  [anon:libc_malloc]
+         66535d98  414ac9e0  [anon:libc_malloc]
+         66535d9c  06e4e135  
+         66535da0  66535dd0  [stack:29511]
+         66535da4  63885c88  [anon:libc_malloc]
+         66535da8  415081e9  /system/lib/libdvm.so
+         66535dac  63885830  [anon:libc_malloc]
+         66535db0  415081e9  /system/lib/libdvm.so
+         66535db4  4006724c  /system/lib/libc.so (__thread_entry+76)
+    #11  66535db8  63885830  [anon:libc_malloc]
+         66535dbc  63885c88  [anon:libc_malloc]
+         66535dc0  66535dd0  [stack:29511]
+         66535dc4  00000016  
+         66535dc8  00000078  
+         66535dcc  400673e4  /system/lib/libc.so (pthread_create+244)
+    #12  66535dd0  66535dd0  [stack:29511]
+         66535dd4  63885c88  [anon:libc_malloc]
+         66535dd8  00000000  
+         66535ddc  00000000  
+         66535de0  00000000  
+         66535de4  06e4e135  
+         66535de8  00000000  
+         66535dec  00000000  
+         66535df0  00000000  
+         66535df4  00000000  
+         66535df8  00000000  
+         66535dfc  00000000  
+         66535e00  00000000  
+         66535e04  00000000  
+         66535e08  00000000  
+         66535e0c  63885830  [anon:libc_malloc]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29512, name: FinalizerDaemon
+    r0 664321a8  r1 00000080  r2 fffffffc  r3 00000000
+    r4 664321a8  r5 66432198  r6 fffffffc  r7 000000f0
+    r8 00000000  r9 00000000  sl 00000000  fp 418672d0
+    ip 00000000  sp 6a0b4bc8  lr 40068fa0  pc 4007b9fc  cpsr 600f0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  0000000000000000  d5  0000000000000000
+    d6  3f00000000000000  d7  42c800004a71a180
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 000000000000001c  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 80000010
+
+backtrace:
+    #00  pc 000219fc  /system/lib/libc.so (__futex_syscall3+8)
+    #01  pc 0000ef9c  /system/lib/libc.so (__pthread_cond_timedwait_relative+48)
+    #02  pc 0000effc  /system/lib/libc.so (__pthread_cond_timedwait+64)
+    #03  pc 00052d6f  /system/lib/libdvm.so
+    #04  pc 0006764d  /system/lib/libdvm.so
+    #05  pc 00026fe0  /system/lib/libdvm.so
+    #06  pc 0002dfa0  /system/lib/libdvm.so (dvmMterpStd(Thread*)+76)
+    #07  pc 0002b638  /system/lib/libdvm.so (dvmInterpret(Thread*, Method const*, JValue*)+184)
+    #08  pc 0006057d  /system/lib/libdvm.so (dvmCallMethodV(Thread*, Method const*, Object*, bool, JValue*, std::__va_list)+336)
+    #09  pc 000605a1  /system/lib/libdvm.so (dvmCallMethod(Thread*, Method const*, Object*, JValue*, ...)+20)
+    #10  pc 00055287  /system/lib/libdvm.so
+    #11  pc 0000d248  /system/lib/libc.so (__thread_entry+72)
+    #12  pc 0000d3e0  /system/lib/libc.so (pthread_create+240)
+
+stack:
+         6a0b4b88  00000000  
+         6a0b4b8c  00000000  
+         6a0b4b90  00000000  
+         6a0b4b94  00000000  
+         6a0b4b98  00000000  
+         6a0b4b9c  00000000  
+         6a0b4ba0  6a0b4c24  [stack:29512]
+         6a0b4ba4  00000000  
+         6a0b4ba8  66431e08  [anon:libc_malloc]
+         6a0b4bac  6664bf38  
+         6a0b4bb0  00000000  
+         6a0b4bb4  6a0b4c24  [stack:29512]
+         6a0b4bb8  664321a8  [anon:libc_malloc]
+         6a0b4bbc  66432198  [anon:libc_malloc]
+         6a0b4bc0  fffffffc  
+         6a0b4bc4  40068f88  /system/lib/libc.so (__pthread_cond_timedwait_relative+28)
+    #00  6a0b4bc8  00000000  
+         ........  ........
+    #01  6a0b4bc8  00000000  
+         6a0b4bcc  66432198  [anon:libc_malloc]
+         6a0b4bd0  664321a8  [anon:libc_malloc]
+         6a0b4bd4  66431e08  [anon:libc_malloc]
+         6a0b4bd8  63885f78  [anon:libc_malloc]
+         6a0b4bdc  40069000  /system/lib/libc.so (__pthread_cond_timedwait+68)
+    #02  6a0b4be0  66432198  [anon:libc_malloc]
+         6a0b4be4  00000000  
+         6a0b4be8  66432198  [anon:libc_malloc]
+         6a0b4bec  66432198  [anon:libc_malloc]
+         6a0b4bf0  00000000  
+         6a0b4bf4  41505d73  /system/lib/libdvm.so
+    #03  6a0b4bf8  66431e08  [anon:libc_malloc]
+         6a0b4bfc  63885f78  [anon:libc_malloc]
+         6a0b4c00  6664bf10  
+         6a0b4c04  6664bf14  
+         6a0b4c08  4156f718  /dev/ashmem/dalvik-zygote (deleted)
+         6a0b4c0c  4156a890  /dev/ashmem/dalvik-zygote (deleted)
+         6a0b4c10  414d0d40  /system/lib/libdvm.so
+         6a0b4c14  00000000  
+         6a0b4c18  6664befc  
+         6a0b4c1c  4151a651  /system/lib/libdvm.so
+    #04  6a0b4c20  00000000  
+         6a0b4c24  00000001  
+         6a0b4c28  00000000  
+         6a0b4c2c  00000000  
+         6a0b4c30  63504ec2  /system/framework/core.odex
+         6a0b4c34  6664bf34  
+         6a0b4c38  66431e08  [anon:libc_malloc]
+         6a0b4c3c  414d9fe4  /system/lib/libdvm.so
+    #05  6a0b4c40  00000000  
+         6a0b4c44  66431e08  [anon:libc_malloc]
+         6a0b4c48  414e0f54  /system/lib/libdvm.so (dvmMterpStd(Thread*))
+         6a0b4c4c  00000000  
+         6a0b4c50  6a0b4d78  [stack:29512]
+         6a0b4c54  66431e08  [anon:libc_malloc]
+         6a0b4c58  6a0b4c94  [stack:29512]
+         6a0b4c5c  6247eeb0  /dev/ashmem/dalvik-LinearAlloc (deleted)
+         6a0b4c60  418672d0  /dev/ashmem/dalvik-heap (deleted)
+         6a0b4c64  414e0fa4  /system/lib/libdvm.so (dvmMterpStd(Thread*)+80)
+    #06  6a0b4c68  00000000  
+         6a0b4c6c  00000000  
+         6a0b4c70  00000000  
+         6a0b4c74  00000000  
+         6a0b4c78  00000000  
+         6a0b4c7c  fffffea0  
+         6a0b4c80  414e0f54  /system/lib/libdvm.so (dvmMterpStd(Thread*))
+         6a0b4c84  414de63c  /system/lib/libdvm.so (dvmInterpret(Thread*, Method const*, JValue*)+188)
+    #07  6a0b4c88  00000000  
+         6a0b4c8c  00000000  
+         6a0b4c90  00000000  
+         6a0b4c94  00000000  
+         6a0b4c98  6664bfe4  
+         6a0b4c9c  00000000  
+         6a0b4ca0  00000000  
+         6a0b4ca4  00000000  
+         6a0b4ca8  00000000  
+         6a0b4cac  00000000  
+         6a0b4cb0  00000000  
+         6a0b4cb4  00000000  
+         6a0b4cb8  00000000  
+         6a0b4cbc  00000000  
+         6a0b4cc0  00000000  
+         6a0b4cc4  00000000  
+         ........  ........
+    #08  6a0b4d18  0000001d  
+         6a0b4d1c  0000001c  
+         6a0b4d20  0000001c  
+         6a0b4d24  66431e08  [anon:libc_malloc]
+         6a0b4d28  400a8384  
+         6a0b4d2c  41522acf  /system/lib/libdvm.so (os_changeThreadPriority(Thread*, int)+82)
+         6a0b4d30  69fb7000  
+         6a0b4d34  6a0b4d78  [stack:29512]
+         6a0b4d38  415641f0  /system/lib/libdvm.so
+         6a0b4d3c  400a8384  
+         6a0b4d40  41564500  /system/lib/libdvm.so
+         6a0b4d44  415644fc  /system/lib/libdvm.so
+         6a0b4d48  69fb7000  
+         6a0b4d4c  beb4d604  [stack]
+         6a0b4d50  400a62ec  /system/lib/libc.so
+         6a0b4d54  415135a5  /system/lib/libdvm.so (dvmCallMethod(Thread*, Method const*, Object*, JValue*, ...)+24)
+    #09  6a0b4d58  6a0b4d78  [stack:29512]
+         6a0b4d5c  6a0b4d78  [stack:29512]
+         6a0b4d60  66431e08  [anon:libc_malloc]
+         6a0b4d64  6a0b4d78  [stack:29512]
+         6a0b4d68  400a8384  
+         6a0b4d6c  66431e08  [anon:libc_malloc]
+         6a0b4d70  4150828b  /system/lib/libdvm.so
+         6a0b4d74  6a0b4d78  [stack:29512]
+    #10  6a0b4d78  00000003  
+         6a0b4d7c  66432260  [anon:libc_malloc]
+         6a0b4d80  00000000  
+         6a0b4d84  616e6946  /dev/ashmem/dalvik-mark-stack (deleted)
+         6a0b4d88  657a696c  /system/usr/icu/icudt51l.dat
+         6a0b4d8c  65614472  /system/usr/icu/icudt51l.dat
+         6a0b4d90  006e6f6d  
+         6a0b4d94  6a0b4d93  [stack:29512]
+         6a0b4d98  6a0b4d84  [stack:29512]
+         6a0b4d9c  06e4e135  
+         6a0b4da0  6a0b4dd0  [stack:29512]
+         6a0b4da4  66432260  [anon:libc_malloc]
+         6a0b4da8  415081e9  /system/lib/libdvm.so
+         6a0b4dac  66431e08  [anon:libc_malloc]
+         6a0b4db0  415081e9  /system/lib/libdvm.so
+         6a0b4db4  4006724c  /system/lib/libc.so (__thread_entry+76)
+    #11  6a0b4db8  66431e08  [anon:libc_malloc]
+         6a0b4dbc  66432260  [anon:libc_malloc]
+         6a0b4dc0  6a0b4dd0  [stack:29512]
+         6a0b4dc4  00000016  
+         6a0b4dc8  00000078  
+         6a0b4dcc  400673e4  /system/lib/libc.so (pthread_create+244)
+    #12  6a0b4dd0  6a0b4dd0  [stack:29512]
+         6a0b4dd4  66432260  [anon:libc_malloc]
+         6a0b4dd8  00000000  
+         6a0b4ddc  00000000  
+         6a0b4de0  00000000  
+         6a0b4de4  06e4e135  
+         6a0b4de8  00000000  
+         6a0b4dec  00000000  
+         6a0b4df0  00000000  
+         6a0b4df4  00000000  
+         6a0b4df8  00000000  
+         6a0b4dfc  00000000  
+         6a0b4e00  00000000  
+         6a0b4e04  00000000  
+         6a0b4e08  00000000  
+         6a0b4e0c  66431e08  [anon:libc_malloc]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29513, name: FinalizerWatchd
+    r0 66432848  r1 00000080  r2 fffffffe  r3 6a1b2be0
+    r4 66432848  r5 66432838  r6 fffffffe  r7 000000f0
+    r8 00000000  r9 00000000  sl 00000000  fp 41867428
+    ip 6a1b2be0  sp 6a1b2bc8  lr 40068fa0  pc 4007b9fc  cpsr 600d0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  0000000000000000  d5  0000000000000000
+    d6  3f00000000000000  d7  42c800004a2d3500
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 000000000000001c  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 80000010
+
+backtrace:
+    #00  pc 000219fc  /system/lib/libc.so (__futex_syscall3+8)
+    #01  pc 0000ef9c  /system/lib/libc.so (__pthread_cond_timedwait_relative+48)
+    #02  pc 0000effc  /system/lib/libc.so (__pthread_cond_timedwait+64)
+    #03  pc 00052d77  /system/lib/libdvm.so
+    #04  pc 00052e3b  /system/lib/libdvm.so (dvmThreadSleep(unsigned long long, unsigned int)+62)
+    #05  pc 00026fe0  /system/lib/libdvm.so
+    #06  pc 0002dfa0  /system/lib/libdvm.so (dvmMterpStd(Thread*)+76)
+    #07  pc 0002b638  /system/lib/libdvm.so (dvmInterpret(Thread*, Method const*, JValue*)+184)
+    #08  pc 0006057d  /system/lib/libdvm.so (dvmCallMethodV(Thread*, Method const*, Object*, bool, JValue*, std::__va_list)+336)
+    #09  pc 000605a1  /system/lib/libdvm.so (dvmCallMethod(Thread*, Method const*, Object*, JValue*, ...)+20)
+    #10  pc 00055287  /system/lib/libdvm.so
+    #11  pc 0000d248  /system/lib/libc.so (__thread_entry+72)
+    #12  pc 0000d3e0  /system/lib/libc.so (pthread_create+240)
+
+stack:
+         6a1b2b88  00000000  
+         6a1b2b8c  000003e8  
+         6a1b2b90  00000000  
+         6a1b2b94  6a1b2bf8  [stack:29513]
+         6a1b2b98  03f28d49  
+         6a1b2b9c  0000270f  
+         6a1b2ba0  00000000  
+         6a1b2ba4  40095db8  /system/lib/libc.so (__gnu_ldivmod_helper+24)
+         6a1b2ba8  00000000  
+         6a1b2bac  00004806  
+         6a1b2bb0  0000480f  
+         6a1b2bb4  7ffffffe  
+         6a1b2bb8  66432848  [anon:libc_malloc]
+         6a1b2bbc  66432838  [anon:libc_malloc]
+         6a1b2bc0  fffffffe  
+         6a1b2bc4  40068f88  /system/lib/libc.so (__pthread_cond_timedwait_relative+28)
+    #00  6a1b2bc8  00000001  
+         ........  ........
+    #01  6a1b2bc8  00000001  
+         6a1b2bcc  66432838  [anon:libc_malloc]
+         6a1b2bd0  66432848  [anon:libc_malloc]
+         6a1b2bd4  664324a8  [anon:libc_malloc]
+         6a1b2bd8  414b0fb8  [anon:libc_malloc]
+         6a1b2bdc  40069000  /system/lib/libc.so (__pthread_cond_timedwait+68)
+    #02  6a1b2be0  00000009  
+         6a1b2be4  3b8b7ff0  
+         6a1b2be8  66432838  [anon:libc_malloc]
+         6a1b2bec  66432838  [anon:libc_malloc]
+         6a1b2bf0  00000001  
+         6a1b2bf4  41505d7b  /system/lib/libdvm.so
+    #03  6a1b2bf8  00004810  
+         6a1b2bfc  03e34b09  
+         6a1b2c00  0000270f  
+         6a1b2c04  00000000  
+         6a1b2c08  00000000  
+         6a1b2c0c  414b0fb8  [anon:libc_malloc]
+         6a1b2c10  664324a8  [anon:libc_malloc]
+         6a1b2c14  00000000  
+         6a1b2c18  66651ed4  
+         6a1b2c1c  41505e3f  /system/lib/libdvm.so (dvmThreadSleep(unsigned long long, unsigned int)+66)
+    #04  6a1b2c20  00000000  
+         6a1b2c24  00000001  
+         6a1b2c28  63531980  /system/framework/core.odex
+         6a1b2c2c  66651f08  
+         6a1b2c30  664324a8  [anon:libc_malloc]
+         6a1b2c34  4156b698  /dev/ashmem/dalvik-zygote (deleted)
+         6a1b2c38  414d0d40  /system/lib/libdvm.so
+         6a1b2c3c  414d9fe4  /system/lib/libdvm.so
+    #05  6a1b2c40  00000000  
+         6a1b2c44  664324a8  [anon:libc_malloc]
+         6a1b2c48  414e0f54  /system/lib/libdvm.so (dvmMterpStd(Thread*))
+         6a1b2c4c  00000000  
+         6a1b2c50  6a1b2d78  [stack:29513]
+         6a1b2c54  664324a8  [anon:libc_malloc]
+         6a1b2c58  6a1b2c94  [stack:29513]
+         6a1b2c5c  6247eeb0  /dev/ashmem/dalvik-LinearAlloc (deleted)
+         6a1b2c60  41867428  /dev/ashmem/dalvik-heap (deleted)
+         6a1b2c64  414e0fa4  /system/lib/libdvm.so (dvmMterpStd(Thread*)+80)
+    #06  6a1b2c68  00000000  
+         6a1b2c6c  00000000  
+         6a1b2c70  00000000  
+         6a1b2c74  00000000  
+         6a1b2c78  00000000  
+         6a1b2c7c  fffffea0  
+         6a1b2c80  414e0f54  /system/lib/libdvm.so (dvmMterpStd(Thread*))
+         6a1b2c84  414de63c  /system/lib/libdvm.so (dvmInterpret(Thread*, Method const*, JValue*)+188)
+    #07  6a1b2c88  00000000  
+         6a1b2c8c  00000000  
+         6a1b2c90  00000000  
+         6a1b2c94  00000000  
+         6a1b2c98  66651fe4  
+         6a1b2c9c  00000000  
+         6a1b2ca0  00000000  
+         6a1b2ca4  00000000  
+         6a1b2ca8  00000000  
+         6a1b2cac  00000000  
+         6a1b2cb0  00000000  
+         6a1b2cb4  00000000  
+         6a1b2cb8  00000000  
+         6a1b2cbc  00000000  
+         6a1b2cc0  00000000  
+         6a1b2cc4  00000000  
+         ........  ........
+    #08  6a1b2d18  0000001d  
+         6a1b2d1c  0000001c  
+         6a1b2d20  0000001c  
+         6a1b2d24  664324a8  [anon:libc_malloc]
+         6a1b2d28  400a8384  
+         6a1b2d2c  41522acf  /system/lib/libdvm.so (os_changeThreadPriority(Thread*, int)+82)
+         6a1b2d30  6a0b5000  
+         6a1b2d34  6a1b2d78  [stack:29513]
+         6a1b2d38  415641f0  /system/lib/libdvm.so
+         6a1b2d3c  400a8384  
+         6a1b2d40  41564500  /system/lib/libdvm.so
+         6a1b2d44  415644fc  /system/lib/libdvm.so
+         6a1b2d48  6a0b5000  
+         6a1b2d4c  beb4d604  [stack]
+         6a1b2d50  400a62ec  /system/lib/libc.so
+         6a1b2d54  415135a5  /system/lib/libdvm.so (dvmCallMethod(Thread*, Method const*, Object*, JValue*, ...)+24)
+    #09  6a1b2d58  6a1b2d78  [stack:29513]
+         6a1b2d5c  6a1b2d78  [stack:29513]
+         6a1b2d60  664324a8  [anon:libc_malloc]
+         6a1b2d64  6a1b2d78  [stack:29513]
+         6a1b2d68  400a8384  
+         6a1b2d6c  664324a8  [anon:libc_malloc]
+         6a1b2d70  4150828b  /system/lib/libdvm.so
+         6a1b2d74  6a1b2d78  [stack:29513]
+    #10  6a1b2d78  00000003  
+         6a1b2d7c  66432900  [anon:libc_malloc]
+         6a1b2d80  00000000  
+         6a1b2d84  414ac9c8  [anon:libc_malloc]
+         6a1b2d88  664324a8  [anon:libc_malloc]
+         6a1b2d8c  400671c4  /system/lib/libc.so (__init_tls+124)
+         6a1b2d90  00000000  
+         6a1b2d94  414ac9c7  [anon:libc_malloc]
+         6a1b2d98  414ac9b0  [anon:libc_malloc]
+         6a1b2d9c  06e4e135  
+         6a1b2da0  6a1b2dd0  [stack:29513]
+         6a1b2da4  66432900  [anon:libc_malloc]
+         6a1b2da8  415081e9  /system/lib/libdvm.so
+         6a1b2dac  664324a8  [anon:libc_malloc]
+         6a1b2db0  415081e9  /system/lib/libdvm.so
+         6a1b2db4  4006724c  /system/lib/libc.so (__thread_entry+76)
+    #11  6a1b2db8  664324a8  [anon:libc_malloc]
+         6a1b2dbc  66432900  [anon:libc_malloc]
+         6a1b2dc0  6a1b2dd0  [stack:29513]
+         6a1b2dc4  00000016  
+         6a1b2dc8  00000078  
+         6a1b2dcc  400673e4  /system/lib/libc.so (pthread_create+244)
+    #12  6a1b2dd0  6a1b2dd0  [stack:29513]
+         6a1b2dd4  66432900  [anon:libc_malloc]
+         6a1b2dd8  00000000  
+         6a1b2ddc  00000000  
+         6a1b2de0  00000000  
+         6a1b2de4  06e4e135  
+         6a1b2de8  00000000  
+         6a1b2dec  00000000  
+         6a1b2df0  00000000  
+         6a1b2df4  00000000  
+         6a1b2df8  00000000  
+         6a1b2dfc  00000000  
+         6a1b2e00  00000000  
+         6a1b2e04  00000000  
+         6a1b2e08  00000000  
+         6a1b2e0c  664324a8  [anon:libc_malloc]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29514, name: Binder_1
+    r0 0000000a  r1 c0186201  r2 6a3aecf0  r3 6a3aece8
+    r4 6663c490  r5 6663c460  r6 6663c4c0  r7 00000036
+    r8 00000001  r9 6a2b1000  sl beb4d464  fp 400a62ec
+    ip 00000001  sp 6a3aecd8  lr 4008723b  pc 4007a660  cpsr 600d0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  0000000000000000  d5  0000000000000000
+    d6  3f00000000000000  d7  400000004a2d3500
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 4000000000000000  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 80000010
+
+backtrace:
+    #00  pc 00020660  /system/lib/libc.so (__ioctl+8)
+    #01  pc 0002d237  /system/lib/libc.so (ioctl+14)
+    #02  pc 0001d3ed  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+140)
+    #03  pc 0001daf7  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+6)
+    #04  pc 0001db8d  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+48)
+    #05  pc 000219f5  /system/lib/libbinder.so
+    #06  pc 0000ea95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+216)
+    #07  pc 0004d31d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+68)
+    #08  pc 0000e5c7  /system/lib/libutils.so
+    #09  pc 0000d248  /system/lib/libc.so (__thread_entry+72)
+    #10  pc 0000d3e0  /system/lib/libc.so (pthread_create+240)
+
+stack:
+         6a3aec98  00000001  
+         6a3aec9c  00000000  
+         6a3aeca0  00010001  
+         6a3aeca4  40111295  /system/lib/libbinder.so (android::IPCThreadState::freeBuffer(android::Parcel*, unsigned char const*, unsigned int, unsigned int const*, unsigned int, void*))
+         6a3aeca8  6663c460  [anon:libc_malloc]
+         6a3aecac  00000000  
+         6a3aecb0  00000000  
+         6a3aecb4  00000000  
+         6a3aecb8  00000000  
+         6a3aecbc  00000000  
+         6a3aecc0  00000000  
+         6a3aecc4  00000000  
+         6a3aecc8  00000001  
+         6a3aeccc  00000002  
+         6a3aecd0  0000000a  
+         6a3aecd4  4004eb51  /system/lib/libcutils.so (set_sched_policy+132)
+    #00  6a3aecd8  0000000a  
+         ........  ........
+    #01  6a3aecd8  0000000a  
+         6a3aecdc  6a3aece8  [stack:29514]
+         6a3aece0  401113f1  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+144)
+         6a3aece4  c0186201  
+         6a3aece8  6a3aecf0  [stack:29514]
+         6a3aecec  00000008  
+    #02  6a3aecf0  00000008  
+         6a3aecf4  00000008  
+         6a3aecf8  6663c610  [anon:libc_malloc]
+         6a3aecfc  00000100  
+         6a3aed00  00000000  
+         6a3aed04  6663c508  [anon:libc_malloc]
+         6a3aed08  6663c460  [anon:libc_malloc]
+         6a3aed0c  6663c4c0  [anon:libc_malloc]
+         6a3aed10  00000001  
+         6a3aed14  4011f9ec  /system/lib/libbinder.so
+         6a3aed18  400e0591  /system/lib/libutils.so
+         6a3aed1c  40111afb  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+10)
+    #03  6a3aed20  6663c460  [anon:libc_malloc]
+         6a3aed24  6663c4c0  [anon:libc_malloc]
+         6a3aed28  00000001  
+         6a3aed2c  40111b91  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+52)
+    #04  6a3aed30  6663c460  [anon:libc_malloc]
+         6a3aed34  00000001  
+         6a3aed38  66431a78  [anon:libc_malloc]
+         6a3aed3c  6a3aed50  [stack:29514]
+         6a3aed40  00000001  
+         6a3aed44  401159f9  /system/lib/libbinder.so
+    #05  6a3aed48  66431a78  [anon:libc_malloc]
+         6a3aed4c  400e0a97  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+218)
+    #06  6a3aed50  66431a78  [anon:libc_malloc]
+         6a3aed54  00010004  
+         6a3aed58  66431a78  [anon:libc_malloc]
+         6a3aed5c  66421708  [anon:libc_malloc]
+         6a3aed60  69fb5408  [anon:libc_malloc]
+         6a3aed64  69fb5408  [anon:libc_malloc]
+         6a3aed68  400e09bd  /system/lib/libutils.so (android::Thread::_threadLoop(void*))
+         6a3aed6c  401d25d4  /system/lib/libandroid_runtime.so
+         6a3aed70  66431a78  [anon:libc_malloc]
+         6a3aed74  4016e31f  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+70)
+    #07  6a3aed78  66431a58  [anon:libc_malloc]
+         6a3aed7c  00010004  
+         6a3aed80  69fb5408  [anon:libc_malloc]
+         6a3aed84  00000000  
+         6a3aed88  69fb58b0  [anon:libc_malloc]
+         6a3aed8c  69fb58b0  [anon:libc_malloc]
+         6a3aed90  00000000  
+         6a3aed94  4016e2d9  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*))
+         6a3aed98  69fb5f20  [anon:libc_malloc]
+         6a3aed9c  400e05c9  /system/lib/libutils.so
+    #08  6a3aeda0  00000000  
+         6a3aeda4  6a3aedd0  [stack:29514]
+         6a3aeda8  66432d50  [anon:libc_malloc]
+         6a3aedac  400e0591  /system/lib/libutils.so
+         6a3aedb0  66431ab0  [anon:libc_malloc]
+         6a3aedb4  4006724c  /system/lib/libc.so (__thread_entry+76)
+    #09  6a3aedb8  66431ab0  [anon:libc_malloc]
+         6a3aedbc  66432d50  [anon:libc_malloc]
+         6a3aedc0  6a3aedd0  [stack:29514]
+         6a3aedc4  00000000  
+         6a3aedc8  00000078  
+         6a3aedcc  400673e4  /system/lib/libc.so (pthread_create+244)
+    #10  6a3aedd0  6a3aedd0  [stack:29514]
+         6a3aedd4  66432d50  [anon:libc_malloc]
+         6a3aedd8  00000000  
+         6a3aeddc  00000000  
+         6a3aede0  00000000  
+         6a3aede4  06e4e135  
+         6a3aede8  00000000  
+         6a3aedec  00000000  
+         6a3aedf0  00000000  
+         6a3aedf4  00000000  
+         6a3aedf8  00000000  
+         6a3aedfc  00000000  
+         6a3aee00  00000000  
+         6a3aee04  00000000  
+         6a3aee08  00000000  
+         6a3aee0c  6663c008  [anon:libc_malloc]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29515, name: Binder_2
+    r0 0000000a  r1 c0186201  r2 6a4b0cf0  r3 6a4b0ce8
+    r4 6663d078  r5 6663d048  r6 6663d0a8  r7 00000036
+    r8 00000001  r9 6a3b3000  sl 6a3aebd4  fp 400a62ec
+    ip 00000001  sp 6a4b0cd8  lr 4008723b  pc 4007a660  cpsr 600a0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  0000000000000000  d5  0000000000000000
+    d6  3f00000000000000  d7  400000004a2d3500
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 4000000000000000  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 80000010
+
+backtrace:
+    #00  pc 00020660  /system/lib/libc.so (__ioctl+8)
+    #01  pc 0002d237  /system/lib/libc.so (ioctl+14)
+    #02  pc 0001d3ed  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+140)
+    #03  pc 0001daf7  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+6)
+    #04  pc 0001db8d  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+48)
+    #05  pc 000219f5  /system/lib/libbinder.so
+    #06  pc 0000ea95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+216)
+    #07  pc 0004d31d  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+68)
+    #08  pc 0000e5c7  /system/lib/libutils.so
+    #09  pc 0000d248  /system/lib/libc.so (__thread_entry+72)
+    #10  pc 0000d3e0  /system/lib/libc.so (pthread_create+240)
+
+stack:
+         6a4b0c98  00000001  
+         6a4b0c9c  00000001  
+         6a4b0ca0  00010001  
+         6a4b0ca4  40111295  /system/lib/libbinder.so (android::IPCThreadState::freeBuffer(android::Parcel*, unsigned char const*, unsigned int, unsigned int const*, unsigned int, void*))
+         6a4b0ca8  6663d048  [anon:libc_malloc]
+         6a4b0cac  00000000  
+         6a4b0cb0  00000000  
+         6a4b0cb4  00000000  
+         6a4b0cb8  00000000  
+         6a4b0cbc  00000000  
+         6a4b0cc0  00000000  
+         6a4b0cc4  00000000  
+         6a4b0cc8  00000001  
+         6a4b0ccc  00000002  
+         6a4b0cd0  0000000a  
+         6a4b0cd4  4004eb51  /system/lib/libcutils.so (set_sched_policy+132)
+    #00  6a4b0cd8  0000000a  
+         ........  ........
+    #01  6a4b0cd8  0000000a  
+         6a4b0cdc  6a4b0ce8  [stack:29515]
+         6a4b0ce0  401113f1  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+144)
+         6a4b0ce4  c0186201  
+         6a4b0ce8  6a4b0cf0  [stack:29515]
+         6a4b0cec  00000008  
+    #02  6a4b0cf0  00000008  
+         6a4b0cf4  00000008  
+         6a4b0cf8  6663d1f8  [anon:libc_malloc]
+         6a4b0cfc  00000100  
+         6a4b0d00  00000000  
+         6a4b0d04  6663d0f0  [anon:libc_malloc]
+         6a4b0d08  6663d048  [anon:libc_malloc]
+         6a4b0d0c  6663d0a8  [anon:libc_malloc]
+         6a4b0d10  00000000  
+         6a4b0d14  4011f9ec  /system/lib/libbinder.so
+         6a4b0d18  400e0591  /system/lib/libutils.so
+         6a4b0d1c  40111afb  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+10)
+    #03  6a4b0d20  6663d048  [anon:libc_malloc]
+         6a4b0d24  6663d0a8  [anon:libc_malloc]
+         6a4b0d28  00000000  
+         6a4b0d2c  40111b91  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+52)
+    #04  6a4b0d30  6663d048  [anon:libc_malloc]
+         6a4b0d34  00000000  
+         6a4b0d38  6663c738  [anon:libc_malloc]
+         6a4b0d3c  6a4b0d50  [stack:29515]
+         6a4b0d40  00000001  
+         6a4b0d44  401159f9  /system/lib/libbinder.so
+    #05  6a4b0d48  6663c738  [anon:libc_malloc]
+         6a4b0d4c  400e0a97  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+218)
+    #06  6a4b0d50  6663c738  [anon:libc_malloc]
+         6a4b0d54  00010004  
+         6a4b0d58  6663c738  [anon:libc_malloc]
+         6a4b0d5c  6663c770  [anon:libc_malloc]
+         6a4b0d60  69fb5980  [anon:libc_malloc]
+         6a4b0d64  69fb5980  [anon:libc_malloc]
+         6a4b0d68  400e09bd  /system/lib/libutils.so (android::Thread::_threadLoop(void*))
+         6a4b0d6c  401d25d4  /system/lib/libandroid_runtime.so
+         6a4b0d70  6663c738  [anon:libc_malloc]
+         6a4b0d74  4016e31f  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+70)
+    #07  6a4b0d78  6663c718  [anon:libc_malloc]
+         6a4b0d7c  00010004  
+         6a4b0d80  69fb5980  [anon:libc_malloc]
+         6a4b0d84  00000000  
+         6a4b0d88  69fb5500  [anon:libc_malloc]
+         6a4b0d8c  69fb5500  [anon:libc_malloc]
+         6a4b0d90  00000000  
+         6a4b0d94  4016e2d9  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*))
+         6a4b0d98  69fb58b0  [anon:libc_malloc]
+         6a4b0d9c  400e05c9  /system/lib/libutils.so
+    #08  6a4b0da0  00000000  
+         6a4b0da4  6a4b0dd0  [stack:29515]
+         6a4b0da8  6663c7a0  [anon:libc_malloc]
+         6a4b0dac  400e0591  /system/lib/libutils.so
+         6a4b0db0  6663c788  [anon:libc_malloc]
+         6a4b0db4  4006724c  /system/lib/libc.so (__thread_entry+76)
+    #09  6a4b0db8  6663c788  [anon:libc_malloc]
+         6a4b0dbc  6663c7a0  [anon:libc_malloc]
+         6a4b0dc0  6a4b0dd0  [stack:29515]
+         6a4b0dc4  00000000  
+         6a4b0dc8  00000078  
+         6a4b0dcc  400673e4  /system/lib/libc.so (pthread_create+244)
+    #10  6a4b0dd0  6a4b0dd0  [stack:29515]
+         6a4b0dd4  6663c7a0  [anon:libc_malloc]
+         6a4b0dd8  00000000  
+         6a4b0ddc  00000000  
+         6a4b0de0  00000000  
+         6a4b0de4  06e4e135  
+         6a4b0de8  00000000  
+         6a4b0dec  00000000  
+         6a4b0df0  00000000  
+         6a4b0df4  00000000  
+         6a4b0df8  00000000  
+         6a4b0dfc  00000000  
+         6a4b0e00  00000000  
+         6a4b0e04  00000000  
+         6a4b0e08  00000000  
+         6a4b0e0c  6663c9e8  [anon:libc_malloc]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29517, name: ServiceLogThrea
+    r0 fffffffc  r1 6ad229b0  r2 00000010  r3 000927c0
+    r4 666400e0  r5 00000000  r6 666400f4  r7 000000fc
+    r8 66640128  r9 00000014  sl 66645a80  fp 6ad22b24
+    ip 6ad229b0  sp 6ad22990  lr 400e267b  pc 4007b834  cpsr 200d0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  8000000000000000  d5  0000000000000000
+    d6  3f00000000000000  d7  3f8000003f4ccccd
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 3fe8000000000000  d17 3fc999999999999a
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000010
+
+backtrace:
+    #00  pc 00021834  /system/lib/libc.so (epoll_wait+12)
+    #01  pc 00010677  /system/lib/libutils.so (android::Looper::pollInner(int)+98)
+    #02  pc 000108a1  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+92)
+    #03  pc 0006a679  /system/lib/libandroid_runtime.so (android::NativeMessageQueue::pollOnce(_JNIEnv*, int)+22)
+    #04  pc 0001dbcc  /system/lib/libdvm.so (dvmPlatformInvoke+112)
+    #05  pc 0004e123  /system/lib/libdvm.so (dvmCallJNIMethod(unsigned int const*, JValue*, Method const*, Thread*)+398)
+    #06  pc 00026fe0  /system/lib/libdvm.so
+    #07  pc 0002dfa0  /system/lib/libdvm.so (dvmMterpStd(Thread*)+76)
+    #08  pc 0002b638  /system/lib/libdvm.so (dvmInterpret(Thread*, Method const*, JValue*)+184)
+    #09  pc 0006057d  /system/lib/libdvm.so (dvmCallMethodV(Thread*, Method const*, Object*, bool, JValue*, std::__va_list)+336)
+    #10  pc 000605a1  /system/lib/libdvm.so (dvmCallMethod(Thread*, Method const*, Object*, JValue*, ...)+20)
+    #11  pc 00055287  /system/lib/libdvm.so
+    #12  pc 0000d248  /system/lib/libc.so (__thread_entry+72)
+    #13  pc 0000d3e0  /system/lib/libc.so (pthread_create+240)
+
+stack:
+         6ad22950  4155fc74  /system/lib/libdvm.so
+         6ad22954  6387cef0  [anon:libc_malloc]
+         6ad22958  6387cef0  [anon:libc_malloc]
+         6ad2295c  4188e680  /dev/ashmem/dalvik-heap (deleted)
+         6ad22960  00083000  
+         6ad22964  41861008  /dev/ashmem/dalvik-heap (deleted)
+         6ad22968  00000018  
+         6ad2296c  00001000  
+         6ad22970  7fffffff  
+         6ad22974  666400e0  [anon:libc_malloc]
+         6ad22978  00000000  
+         6ad2297c  000927c0  
+         6ad22980  6ad229b0  [stack:29517]
+         6ad22984  66640128  [anon:libc_malloc]
+         6ad22988  00000014  
+         6ad2298c  400e2663  /system/lib/libutils.so (android::Looper::pollInner(int)+78)
+    #00  6ad22990  415641f0  /system/lib/libdvm.so
+         ........  ........
+    #01  6ad22990  415641f0  /system/lib/libdvm.so
+         6ad22994  64ed8670  /system/lib/libjavacore.so
+         6ad22998  66645ddc  [anon:libc_malloc]
+         6ad2299c  4188ffd0  /dev/ashmem/dalvik-heap (deleted)
+         6ad229a0  fffffea0  
+         6ad229a4  66645a70  [anon:libc_malloc]
+         6ad229a8  4188ffd0  /dev/ashmem/dalvik-heap (deleted)
+         6ad229ac  00000010  
+         6ad229b0  00000000  
+         6ad229b4  415088f5  /system/lib/libdvm.so (dvmAddTrackedAlloc+24)
+         6ad229b8  4188ffd0  /dev/ashmem/dalvik-heap (deleted)
+         6ad229bc  00000000  
+         6ad229c0  4188ffd0  /dev/ashmem/dalvik-heap (deleted)
+         6ad229c4  415641f0  /system/lib/libdvm.so
+         6ad229c8  00000010  
+         6ad229cc  414dce40  /system/lib/libdvm.so (dvmMalloc(unsigned int, int)+96)
+         ........  ........
+    #02  6ad22ad8  00000000  
+         6ad22adc  666400b0  [anon:libc_malloc]
+         6ad22ae0  00000000  
+         6ad22ae4  6663ecc0  [anon:libc_malloc]
+         6ad22ae8  6ac24f38  
+         6ad22aec  6ad22b10  [stack:29517]
+         6ad22af0  6ac24f30  
+         6ad22af4  4018b67d  /system/lib/libandroid_runtime.so (android::NativeMessageQueue::pollOnce(_JNIEnv*, int)+26)
+    #03  6ad22af8  00000000  
+         6ad22afc  6663ecc0  [anon:libc_malloc]
+         6ad22b00  624dc178  /dev/ashmem/dalvik-LinearAlloc (deleted)
+         6ad22b04  66645a70  [anon:libc_malloc]
+         6ad22b08  00000000  
+         6ad22b0c  414d0bd0  /system/lib/libdvm.so (dvmPlatformInvoke+116)
+    #04  6ad22b10  6ac24f30  
+         6ad22b14  00000001  
+         6ad22b18  00000008  
+         6ad22b1c  41591570  /dev/ashmem/dalvik-zygote (deleted)
+         6ad22b20  41887258  /dev/ashmem/dalvik-heap (deleted)
+         6ad22b24  41501127  /system/lib/libdvm.so (dvmCallJNIMethod(unsigned int const*, JValue*, Method const*, Thread*)+402)
+    #05  6ad22b28  6ac24f30  
+         6ad22b2c  641550b9  /system/framework/framework.odex
+         6ad22b30  4018b697  /system/lib/libandroid_runtime.so
+         6ad22b34  66645a80  [anon:libc_malloc]
+         6ad22b38  00000000  
+         6ad22b3c  0000001e  
+         6ad22b40  22b00001  
+         6ad22b44  00000000  
+         6ad22b48  00000000  
+         6ad22b4c  400a8384  
+         6ad22b50  415641f0  /system/lib/libdvm.so
+         6ad22b54  00000000  
+         6ad22b58  66645ddc  [anon:libc_malloc]
+         6ad22b5c  4188f978  /dev/ashmem/dalvik-heap (deleted)
+         6ad22b60  fffffea0  
+         6ad22b64  66645a70  [anon:libc_malloc]
+         ........  ........
+    #06  6ad22c40  00000000  
+         6ad22c44  66645a70  [anon:libc_malloc]
+         6ad22c48  414e0f54  /system/lib/libdvm.so (dvmMterpStd(Thread*))
+         6ad22c4c  00000000  
+         6ad22c50  6ad22d78  [stack:29517]
+         6ad22c54  66645a70  [anon:libc_malloc]
+         6ad22c58  6ad22c94  [stack:29517]
+         6ad22c5c  627c7b68  /dev/ashmem/dalvik-LinearAlloc (deleted)
+         6ad22c60  41887258  /dev/ashmem/dalvik-heap (deleted)
+         6ad22c64  414e0fa4  /system/lib/libdvm.so (dvmMterpStd(Thread*)+80)
+    #07  6ad22c68  00000000  
+         6ad22c6c  00000000  
+         6ad22c70  00000000  
+         6ad22c74  00000000  
+         6ad22c78  00000000  
+         6ad22c7c  fffffea0  
+         6ad22c80  414e0f54  /system/lib/libdvm.so (dvmMterpStd(Thread*))
+         6ad22c84  414de63c  /system/lib/libdvm.so (dvmInterpret(Thread*, Method const*, JValue*)+188)
+    #08  6ad22c88  00000000  
+         6ad22c8c  00000000  
+         6ad22c90  00000000  
+         6ad22c94  00000000  
+         6ad22c98  6ac24fdc  
+         6ad22c9c  00000000  
+         6ad22ca0  00000000  
+         6ad22ca4  00000000  
+         6ad22ca8  00000000  
+         6ad22cac  00000000  
+         6ad22cb0  00000000  
+         6ad22cb4  00000000  
+         6ad22cb8  00000000  
+         6ad22cbc  00000000  
+         6ad22cc0  00000000  
+         6ad22cc4  00000000  
+         ........  ........
+    #09  6ad22d18  0000001d  
+         6ad22d1c  0000001c  
+         6ad22d20  0000001c  
+         6ad22d24  66645a70  [anon:libc_malloc]
+         6ad22d28  400a8384  
+         6ad22d2c  41522acf  /system/lib/libdvm.so (os_changeThreadPriority(Thread*, int)+82)
+         6ad22d30  6ac25000  
+         6ad22d34  6ad22d78  [stack:29517]
+         6ad22d38  415641f0  /system/lib/libdvm.so
+         6ad22d3c  400a8384  
+         6ad22d40  41564500  /system/lib/libdvm.so
+         6ad22d44  415644fc  /system/lib/libdvm.so
+         6ad22d48  6ac25000  
+         6ad22d4c  beb4d47c  [stack]
+         6ad22d50  400a62ec  /system/lib/libc.so
+         6ad22d54  415135a5  /system/lib/libdvm.so (dvmCallMethod(Thread*, Method const*, Object*, JValue*, ...)+24)
+    #10  6ad22d58  6ad22d78  [stack:29517]
+         6ad22d5c  6ad22d78  [stack:29517]
+         6ad22d60  66645a70  [anon:libc_malloc]
+         6ad22d64  6ad22d78  [stack:29517]
+         6ad22d68  400a8384  
+         6ad22d6c  66645a70  [anon:libc_malloc]
+         6ad22d70  4150828b  /system/lib/libdvm.so
+         6ad22d74  6ad22d78  [stack:29517]
+    #11  6ad22d78  00000003  
+         6ad22d7c  6a4e7c88  [anon:libc_malloc]
+         6ad22d80  00000000  
+         6ad22d84  414aca40  [anon:libc_malloc]
+         6ad22d88  66645a70  [anon:libc_malloc]
+         6ad22d8c  400671c4  /system/lib/libc.so (__init_tls+124)
+         6ad22d90  00000000  
+         6ad22d94  414aca38  [anon:libc_malloc]
+         6ad22d98  414aca28  [anon:libc_malloc]
+         6ad22d9c  06e4e135  
+         6ad22da0  6ad22dd0  [stack:29517]
+         6ad22da4  6a4e7c88  [anon:libc_malloc]
+         6ad22da8  415081e9  /system/lib/libdvm.so
+         6ad22dac  66645a70  [anon:libc_malloc]
+         6ad22db0  415081e9  /system/lib/libdvm.so
+         6ad22db4  4006724c  /system/lib/libc.so (__thread_entry+76)
+    #12  6ad22db8  66645a70  [anon:libc_malloc]
+         6ad22dbc  6a4e7c88  [anon:libc_malloc]
+         6ad22dc0  6ad22dd0  [stack:29517]
+         6ad22dc4  00000002  
+         6ad22dc8  00000078  
+         6ad22dcc  400673e4  /system/lib/libc.so (pthread_create+244)
+    #13  6ad22dd0  6ad22dd0  [stack:29517]
+         6ad22dd4  6a4e7c88  [anon:libc_malloc]
+         6ad22dd8  00000000  
+         6ad22ddc  00000000  
+         6ad22de0  00000000  
+         6ad22de4  06e4e135  
+         6ad22de8  00000000  
+         6ad22dec  00000000  
+         6ad22df0  00000000  
+         6ad22df4  00000000  
+         6ad22df8  00000000  
+         6ad22dfc  00000000  
+         6ad22e00  00000000  
+         6ad22e04  00000000  
+         6ad22e08  00000000  
+         6ad22e0c  66645a70  [anon:libc_malloc]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29518, name: kuwo.kwmusiccar
+    r0 6663bea0  r1 00000080  r2 00000000  r3 00000000
+    r4 6663bea0  r5 6663be9c  r6 00000000  r7 000000f0
+    r8 6663be98  r9 00000000  sl 00000001  fp 400a62ec
+    ip 00000000  sp 6b0f9cf8  lr 40068fa0  pc 4007b9fc  cpsr 600f0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  8000000000000000  d5  0000000000000000
+    d6  000000a000000000  d7  42c800004a31a5e0
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000010
+
+backtrace:
+    #00  pc 000219fc  /system/lib/libc.so (__futex_syscall3+8)
+    #01  pc 0000ef9c  /system/lib/libc.so (__pthread_cond_timedwait_relative+48)
+    #02  pc 0000effc  /system/lib/libc.so (__pthread_cond_timedwait+64)
+    #03  pc 0009b899  /system/vendor/lib/libp2p.so (Poco::EventImpl::waitImpl()+32)
+
+stack:
+         6b0f9cb8  00000000  
+         6b0f9cbc  00000000  
+         6b0f9cc0  00000000  
+         6b0f9cc4  00000000  
+         6b0f9cc8  00000000  
+         6b0f9ccc  00000000  
+         6b0f9cd0  00000000  
+         6b0f9cd4  00000000  
+         6b0f9cd8  00000000  
+         6b0f9cdc  00000000  
+         6b0f9ce0  00000000  
+         6b0f9ce4  00000000  
+         6b0f9ce8  6663bea0  [anon:libc_malloc]
+         6b0f9cec  6663be9c  [anon:libc_malloc]
+         6b0f9cf0  00000000  
+         6b0f9cf4  40068f88  /system/lib/libc.so (__pthread_cond_timedwait_relative+28)
+    #00  6b0f9cf8  00000000  
+         ........  ........
+    #01  6b0f9cf8  00000000  
+         6b0f9cfc  6663be9c  [anon:libc_malloc]
+         6b0f9d00  6663bea0  [anon:libc_malloc]
+         6b0f9d04  6663bea0  [anon:libc_malloc]
+         6b0f9d08  6aff3d24  /system/vendor/lib/libp2p.so
+         6b0f9d0c  40069000  /system/lib/libc.so (__pthread_cond_timedwait+68)
+    #02  6b0f9d10  6663be98  [anon:libc_malloc]
+         6b0f9d14  6663be9c  [anon:libc_malloc]
+         6b0f9d18  6affc000  
+         6b0f9d1c  6663be98  [anon:libc_malloc]
+         6b0f9d20  6663be9c  [anon:libc_malloc]
+         6b0f9d24  6af3589d  /system/vendor/lib/libp2p.so (Poco::EventImpl::waitImpl()+36)
+    #03  6b0f9d28  6663beb0  [anon:libc_malloc]
+         6b0f9d2c  6aff3d24  /system/vendor/lib/libp2p.so
+         6b0f9d30  6663beb4  [anon:libc_malloc]
+         6b0f9d34  6aefb111  /system/vendor/lib/libp2p.so (Poco::EventImpl::setImpl()+132)
+         6b0f9d38  6663beb0  [anon:libc_malloc]
+         6b0f9d3c  00000002  
+         6b0f9d40  6663becc  [anon:libc_malloc]
+         6b0f9d44  6663be58  [anon:libc_malloc]
+         6b0f9d48  6663bebc  [anon:libc_malloc]
+         6b0f9d4c  6affc000  
+         6b0f9d50  6b0f9d5c  [stack:29518]
+         6b0f9d54  6af53051  /system/vendor/lib/libp2p.so (Poco::PooledThread::run()+124)
+         6b0f9d58  00000000  
+         6b0f9d5c  00000000  
+         6b0f9d60  6af51c49  /system/vendor/lib/libp2p.so (Poco::ThreadImpl::runnableEntry(void*))
+         6b0f9d64  6affc000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29519, name: kuwo.kwmusiccar
+    r0 6b1f7d3c  r1 00000080  r2 00000000  r3 00000000
+    r4 6b1f7d3c  r5 6b1f7d38  r6 00000000  r7 000000f0
+    r8 6af51c49  r9 6b0fa000  sl 6663ff58  fp 400a62ec
+    ip 00000000  sp 6b1f7cc8  lr 40068fa0  pc 4007b9fc  cpsr 600f0010
+    d0  4242424242424242  d1  4242424242424242
+    d2  0000000000000000  d3  0000000000000000
+    d4  8000000000000000  d5  0000000000000000
+    d6  000000a000000000  d7  42c800004a31a5e0
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000010
+
+backtrace:
+    #00  pc 000219fc  /system/lib/libc.so (__futex_syscall3+8)
+    #01  pc 0000ef9c  /system/lib/libc.so (__pthread_cond_timedwait_relative+48)
+    #02  pc 0000effc  /system/lib/libc.so (__pthread_cond_timedwait+64)
+    #03  pc 0009b899  /system/vendor/lib/libp2p.so (Poco::EventImpl::waitImpl()+32)
+
+stack:
+         6b1f7c88  6b1f7cc0  [stack:29519]
+         6b1f7c8c  6ab3efd0  [anon:libc_malloc]
+         6b1f7c90  00000005  
+         6b1f7c94  6aef87a3  /system/vendor/lib/libp2p.so (Poco::MutexImpl::unlockImpl()+6)
+         6b1f7c98  6ab3f230  [anon:libc_malloc]
+         6b1f7c9c  00000000  
+         6b1f7ca0  6b1f7cc0  [stack:29519]
+         6b1f7ca4  6aef8d07  /system/vendor/lib/libp2p.so
+         6b1f7ca8  00000001  
+         6b1f7cac  6af09b63  /system/vendor/lib/libp2p.so
+         6b1f7cb0  6ab3f048  [anon:libc_malloc]
+         6b1f7cb4  400a8384  
+         6b1f7cb8  6b1f7d3c  [stack:29519]
+         6b1f7cbc  6b1f7d38  [stack:29519]
+         6b1f7cc0  00000000  
+         6b1f7cc4  40068f88  /system/lib/libc.so (__pthread_cond_timedwait_relative+28)
+    #00  6b1f7cc8  00000000  
+         ........  ........
+    #01  6b1f7cc8  00000000  
+         6b1f7ccc  6b1f7d38  [stack:29519]
+         6b1f7cd0  6b1f7d3c  [stack:29519]
+         6b1f7cd4  6b1f7d3c  [stack:29519]
+         6b1f7cd8  6aff3d24  /system/vendor/lib/libp2p.so
+         6b1f7cdc  40069000  /system/lib/libc.so (__pthread_cond_timedwait+68)
+    #02  6b1f7ce0  6b1f7d34  [stack:29519]
+         6b1f7ce4  6b1f7d38  [stack:29519]
+         6b1f7ce8  66644580  [anon:libc_malloc]
+         6b1f7cec  6b1f7d34  [stack:29519]
+         6b1f7cf0  6b1f7d38  [stack:29519]
+         6b1f7cf4  6af3589d  /system/vendor/lib/libp2p.so (Poco::EventImpl::waitImpl()+36)
+    #03  6b1f7cf8  70170002  
+         6b1f7cfc  00000000  
+         6b1f7d00  6b1f7d30  [stack:29519]
+         6b1f7d04  6663ebf8  [anon:libc_malloc]
+         6b1f7d08  66644580  [anon:libc_malloc]
+         6b1f7d0c  6aef87a3  /system/vendor/lib/libp2p.so (Poco::MutexImpl::unlockImpl()+6)
+         6b1f7d10  6663ebfc  [anon:libc_malloc]
+         6b1f7d14  6663ebfc  [anon:libc_malloc]
+         6b1f7d18  6663ebf8  [anon:libc_malloc]
+         6b1f7d1c  66644580  [anon:libc_malloc]
+         6b1f7d20  66644584  [anon:libc_malloc]
+         6b1f7d24  6aefa2b1  /system/vendor/lib/libp2p.so (void Poco::Condition::wait<Poco::Mutex>(Poco::Mutex&)+52)
+         6b1f7d28  6663ebb8  [anon:libc_malloc]
+         6b1f7d2c  6663ebf8  [anon:libc_malloc]
+         6b1f7d30  6663ebfc  [anon:libc_malloc]
+         6b1f7d34  66640001  [anon:libc_malloc]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29520, name: kuwo.kwmusiccar
+    r0 6ab3f0ec  r1 00000080  r2 00000000  r3 00000000
+    r4 6ab3f0ec  r5 6ab3f0e8  r6 00000000  r7 000000f0
+    r8 6a612070  r9 00000000  sl 00000001  fp 400a62ec
+    ip 00000000  sp 6b2f5cd8  lr 40068fa0  pc 4007b9fc  cpsr 600f0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  8000000000000000  d5  0000000000000000
+    d6  000000a000000000  d7  42c800004a31a5e0
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000010
+
+backtrace:
+    #00  pc 000219fc  /system/lib/libc.so (__futex_syscall3+8)
+    #01  pc 0000ef9c  /system/lib/libc.so (__pthread_cond_timedwait_relative+48)
+    #02  pc 0000effc  /system/lib/libc.so (__pthread_cond_timedwait+64)
+    #03  pc 000b505f  /system/vendor/lib/libp2p.so (Poco::SemaphoreImpl::waitImpl()+34)
+
+stack:
+         6b2f5c98  00000000  
+         6b2f5c9c  00000000  
+         6b2f5ca0  00000000  
+         6b2f5ca4  00000000  
+         6b2f5ca8  00000000  
+         6b2f5cac  00000000  
+         6b2f5cb0  00000000  
+         6b2f5cb4  00000000  
+         6b2f5cb8  00000000  
+         6b2f5cbc  00000000  
+         6b2f5cc0  00000000  
+         6b2f5cc4  00000000  
+         6b2f5cc8  6ab3f0ec  [anon:libc_malloc]
+         6b2f5ccc  6ab3f0e8  [anon:libc_malloc]
+         6b2f5cd0  00000000  
+         6b2f5cd4  40068f88  /system/lib/libc.so (__pthread_cond_timedwait_relative+28)
+    #00  6b2f5cd8  00000000  
+         ........  ........
+    #01  6b2f5cd8  00000000  
+         6b2f5cdc  6ab3f0e8  [anon:libc_malloc]
+         6b2f5ce0  6ab3f0ec  [anon:libc_malloc]
+         6b2f5ce4  6ab3f0ec  [anon:libc_malloc]
+         6b2f5ce8  6aff3d24  /system/vendor/lib/libp2p.so
+         6b2f5cec  40069000  /system/lib/libc.so (__pthread_cond_timedwait+68)
+    #02  6b2f5cf0  6ab3f0e0  [anon:libc_malloc]
+         6b2f5cf4  6ab3f0e8  [anon:libc_malloc]
+         6b2f5cf8  0000025c  
+         6b2f5cfc  6ab3f0e0  [anon:libc_malloc]
+         6b2f5d00  6ab3f0e8  [anon:libc_malloc]
+         6b2f5d04  6af4f063  /system/vendor/lib/libp2p.so (Poco::SemaphoreImpl::waitImpl()+38)
+    #03  6b2f5d08  6aff3d24  /system/vendor/lib/libp2p.so
+         6b2f5d0c  40069000  /system/lib/libc.so (__pthread_cond_timedwait+68)
+         6b2f5d10  6a612070  [anon:libc_malloc]
+         6b2f5d14  6a612074  [anon:libc_malloc]
+         6b2f5d18  6a612070  [anon:libc_malloc]
+         6b2f5d1c  6a612074  [anon:libc_malloc]
+         6b2f5d20  6a612078  [anon:libc_malloc]
+         6b2f5d24  6ab3efd0  [anon:libc_malloc]
+         6b2f5d28  6a612094  [anon:libc_malloc]
+         6b2f5d2c  0000025c  
+         6b2f5d30  6ab3f0e0  [anon:libc_malloc]
+         6b2f5d34  6af0aa47  /system/vendor/lib/libp2p.so
+         6b2f5d38  6ab3efd0  [anon:libc_malloc]
+         6b2f5d3c  00000000  
+         6b2f5d40  6af0aa31  /system/vendor/lib/libp2p.so
+         6b2f5d44  6a612030  [anon:libc_malloc]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29521, name: kuwo.kwmusiccar
+    r0 6ab3f0ec  r1 00000080  r2 00000000  r3 00000000
+    r4 6ab3f0ec  r5 6ab3f0e8  r6 00000000  r7 000000f0
+    r8 6ab2f2b0  r9 00000000  sl 00000001  fp 400a62ec
+    ip 00000000  sp 6b3f3cd8  lr 40068fa0  pc 4007b9fc  cpsr 600f0010
+    d0  4242424242424242  d1  4242424242424242
+    d2  0000000000000000  d3  0000000000000000
+    d4  8000000000000000  d5  0000000000000000
+    d6  000000a000000000  d7  42c800004a31a5e0
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000010
+
+backtrace:
+    #00  pc 000219fc  /system/lib/libc.so (__futex_syscall3+8)
+    #01  pc 0000ef9c  /system/lib/libc.so (__pthread_cond_timedwait_relative+48)
+    #02  pc 0000effc  /system/lib/libc.so (__pthread_cond_timedwait+64)
+    #03  pc 000b505f  /system/vendor/lib/libp2p.so (Poco::SemaphoreImpl::waitImpl()+34)
+
+stack:
+         6b3f3c98  00000000  
+         6b3f3c9c  00000000  
+         6b3f3ca0  00000000  
+         6b3f3ca4  00000000  
+         6b3f3ca8  00000000  
+         6b3f3cac  00000000  
+         6b3f3cb0  00000000  
+         6b3f3cb4  00000000  
+         6b3f3cb8  00000000  
+         6b3f3cbc  00000000  
+         6b3f3cc0  00000000  
+         6b3f3cc4  00000000  
+         6b3f3cc8  6ab3f0ec  [anon:libc_malloc]
+         6b3f3ccc  6ab3f0e8  [anon:libc_malloc]
+         6b3f3cd0  00000000  
+         6b3f3cd4  40068f88  /system/lib/libc.so (__pthread_cond_timedwait_relative+28)
+    #00  6b3f3cd8  00000000  
+         ........  ........
+    #01  6b3f3cd8  00000000  
+         6b3f3cdc  6ab3f0e8  [anon:libc_malloc]
+         6b3f3ce0  6ab3f0ec  [anon:libc_malloc]
+         6b3f3ce4  6ab3f0ec  [anon:libc_malloc]
+         6b3f3ce8  6aff3d24  /system/vendor/lib/libp2p.so
+         6b3f3cec  40069000  /system/lib/libc.so (__pthread_cond_timedwait+68)
+    #02  6b3f3cf0  6ab3f0e0  [anon:libc_malloc]
+         6b3f3cf4  6ab3f0e8  [anon:libc_malloc]
+         6b3f3cf8  0000025c  
+         6b3f3cfc  6ab3f0e0  [anon:libc_malloc]
+         6b3f3d00  6ab3f0e8  [anon:libc_malloc]
+         6b3f3d04  6af4f063  /system/vendor/lib/libp2p.so (Poco::SemaphoreImpl::waitImpl()+38)
+    #03  6b3f3d08  6aff3d24  /system/vendor/lib/libp2p.so
+         6b3f3d0c  40069000  /system/lib/libc.so (__pthread_cond_timedwait+68)
+         6b3f3d10  6ab2f2b0  [anon:libc_malloc]
+         6b3f3d14  6ab2f2b4  [anon:libc_malloc]
+         6b3f3d18  6ab2f2b0  [anon:libc_malloc]
+         6b3f3d1c  6ab2f2b4  [anon:libc_malloc]
+         6b3f3d20  6ab2f2b8  [anon:libc_malloc]
+         6b3f3d24  6ab3efd0  [anon:libc_malloc]
+         6b3f3d28  6ab2f2d4  [anon:libc_malloc]
+         6b3f3d2c  0000025c  
+         6b3f3d30  6ab3f0e0  [anon:libc_malloc]
+         6b3f3d34  6af0aa47  /system/vendor/lib/libp2p.so
+         6b3f3d38  6ab3efd0  [anon:libc_malloc]
+         6b3f3d3c  00000000  
+         6b3f3d40  6af0aa31  /system/vendor/lib/libp2p.so
+         6b3f3d44  6ab2f270  [anon:libc_malloc]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29522, name: kuwo.kwmusiccar
+    r0 6b4f1d10  r1 00000000  r2 1662ede0  r3 00035a7b
+    r4 00030d40  r5 00000000  r6 6b4f1ce8  r7 000000a2
+    r8 6af51c49  r9 6b4f1cf0  sl 66431cb0  fp 000003e8
+    ip 6b4f1d10  sp 6b4f1cd8  lr 6af51183  pc 4007af78  cpsr 400f0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  8000000000000000  d5  0000000000000000
+    d6  000000a000000000  d7  42c800004a31a5e0
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000010
+
+backtrace:
+    #00  pc 00020f78  /system/lib/libc.so (nanosleep+8)
+    #01  pc 000b717f  /system/vendor/lib/libp2p.so (Poco::ThreadImpl::sleepImpl(long)+110)
+
+stack:
+         6b4f1c98  6b4f1cf0  [stack:29522]
+         6b4f1c9c  6af54339  /system/vendor/lib/libp2p.so (Poco::Timestamp::update()+32)
+         6b4f1ca0  6b4f1cf0  [stack:29522]
+         6b4f1ca4  66431cb0  [anon:libc_malloc]
+         6b4f1ca8  000003e8  
+         6b4f1cac  6afac43c  /system/vendor/lib/libp2p.so (__gnu_ldivmod_helper+24)
+         6b4f1cb0  3842eb01  
+         6b4f1cb4  0002eba0  
+         6b4f1cb8  00000000  
+         6b4f1cbc  6b4f1cf0  [stack:29522]
+         6b4f1cc0  00000000  
+         6b4f1cc4  6b4f1ce8  [stack:29522]
+         6b4f1cc8  6b4f1d10  [stack:29522]
+         6b4f1ccc  6af543c1  /system/vendor/lib/libp2p.so (Poco::Timestamp::Timestamp()+8)
+         6b4f1cd0  00030d40  
+         6b4f1cd4  6af5117b  /system/vendor/lib/libp2p.so (Poco::ThreadImpl::sleepImpl(long)+106)
+    #00  6b4f1cd8  000f4240  
+         ........  ........
+    #01  6b4f1cd8  000f4240  
+         6b4f1cdc  00000000  
+         6b4f1ce0  00000000  
+         6b4f1ce4  00000000  
+         6b4f1ce8  00030d40  
+         6b4f1cec  00000000  
+         6b4f1cf0  1662ede0  
+         6b4f1cf4  00035a7b  
+         6b4f1cf8  00000000  
+         6b4f1cfc  00000000  
+         6b4f1d00  00000000  
+         6b4f1d04  00000000  
+         6b4f1d08  00000000  
+         6b4f1d0c  00000000  
+         6b4f1d10  00000000  
+         6b4f1d14  0bebc200  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29523, name: kuwo.kwmusiccar
+    r0 6b5efd10  r1 00000000  r2 1663b30a  r3 00035a7b
+    r4 0000c350  r5 00000000  r6 6b5efce8  r7 000000a2
+    r8 6af51c49  r9 6b5efcf0  sl 66431da0  fp 000003e8
+    ip 6b5efd10  sp 6b5efcd8  lr 6af51183  pc 4007af78  cpsr 400f0010
+    d0  4242424242424242  d1  4242424242424242
+    d2  0000000000000000  d3  0000000000000000
+    d4  8000000000000000  d5  0000000000000000
+    d6  000000a000000000  d7  42c800004a31a5e0
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000010
+
+backtrace:
+    #00  pc 00020f78  /system/lib/libc.so (nanosleep+8)
+    #01  pc 000b717f  /system/vendor/lib/libp2p.so (Poco::ThreadImpl::sleepImpl(long)+110)
+
+stack:
+         6b5efc98  6b5efcf0  [stack:29523]
+         6b5efc9c  6af54339  /system/vendor/lib/libp2p.so (Poco::Timestamp::update()+32)
+         6b5efca0  6b5efcf0  [stack:29523]
+         6b5efca4  66431da0  [anon:libc_malloc]
+         6b5efca8  000003e8  
+         6b5efcac  6afac43c  /system/vendor/lib/libp2p.so (__gnu_ldivmod_helper+24)
+         6b5efcb0  3842eb01  
+         6b5efcb4  0003b0ca  
+         6b5efcb8  00000000  
+         6b5efcbc  6b5efcf0  [stack:29523]
+         6b5efcc0  00000000  
+         6b5efcc4  6b5efce8  [stack:29523]
+         6b5efcc8  6b5efd10  [stack:29523]
+         6b5efccc  6af543c1  /system/vendor/lib/libp2p.so (Poco::Timestamp::Timestamp()+8)
+         6b5efcd0  0000c350  
+         6b5efcd4  6af5117b  /system/vendor/lib/libp2p.so (Poco::ThreadImpl::sleepImpl(long)+106)
+    #00  6b5efcd8  000f4240  
+         ........  ........
+    #01  6b5efcd8  000f4240  
+         6b5efcdc  00000000  
+         6b5efce0  00000000  
+         6b5efce4  00000000  
+         6b5efce8  0000c350  
+         6b5efcec  00000000  
+         6b5efcf0  1663b30a  
+         6b5efcf4  00035a7b  
+         6b5efcf8  00000000  
+         6b5efcfc  00000000  
+         6b5efd00  00000000  
+         6b5efd04  00000000  
+         6b5efd08  00000000  
+         6b5efd0c  00000000  
+         6b5efd10  00000000  
+         6b5efd14  02faf080  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29524, name: kuwo.kwmusiccar
+    r0 6ab3f0ec  r1 00000080  r2 00000000  r3 00000000
+    r4 6ab3f0ec  r5 6ab3f0e8  r6 00000000  r7 000000f0
+    r8 66431d58  r9 00000000  sl 00000001  fp 400a62ec
+    ip 00000000  sp 6b6edcd8  lr 40068fa0  pc 4007b9fc  cpsr 600f0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  8000000000000000  d5  0000000000000000
+    d6  000000a000000000  d7  42c800004a31a5e0
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000010
+
+backtrace:
+    #00  pc 000219fc  /system/lib/libc.so (__futex_syscall3+8)
+    #01  pc 0000ef9c  /system/lib/libc.so (__pthread_cond_timedwait_relative+48)
+    #02  pc 0000effc  /system/lib/libc.so (__pthread_cond_timedwait+64)
+    #03  pc 000b505f  /system/vendor/lib/libp2p.so (Poco::SemaphoreImpl::waitImpl()+34)
+
+stack:
+         6b6edc98  00000000  
+         6b6edc9c  00000000  
+         6b6edca0  00000000  
+         6b6edca4  00000000  
+         6b6edca8  00000000  
+         6b6edcac  00000000  
+         6b6edcb0  00000000  
+         6b6edcb4  00000000  
+         6b6edcb8  00000000  
+         6b6edcbc  00000000  
+         6b6edcc0  00000000  
+         6b6edcc4  00000000  
+         6b6edcc8  6ab3f0ec  [anon:libc_malloc]
+         6b6edccc  6ab3f0e8  [anon:libc_malloc]
+         6b6edcd0  00000000  
+         6b6edcd4  40068f88  /system/lib/libc.so (__pthread_cond_timedwait_relative+28)
+    #00  6b6edcd8  00000000  
+         ........  ........
+    #01  6b6edcd8  00000000  
+         6b6edcdc  6ab3f0e8  [anon:libc_malloc]
+         6b6edce0  6ab3f0ec  [anon:libc_malloc]
+         6b6edce4  6ab3f0ec  [anon:libc_malloc]
+         6b6edce8  6aff3d24  /system/vendor/lib/libp2p.so
+         6b6edcec  40069000  /system/lib/libc.so (__pthread_cond_timedwait+68)
+    #02  6b6edcf0  6ab3f0e0  [anon:libc_malloc]
+         6b6edcf4  6ab3f0e8  [anon:libc_malloc]
+         6b6edcf8  0000025c  
+         6b6edcfc  6ab3f0e0  [anon:libc_malloc]
+         6b6edd00  6ab3f0e8  [anon:libc_malloc]
+         6b6edd04  6af4f063  /system/vendor/lib/libp2p.so (Poco::SemaphoreImpl::waitImpl()+38)
+    #03  6b6edd08  00000000  
+         6b6edd0c  00000000  
+         6b6edd10  66431d58  [anon:libc_malloc]
+         6b6edd14  66431d5c  [anon:libc_malloc]
+         6b6edd18  66431d58  [anon:libc_malloc]
+         6b6edd1c  66431d5c  [anon:libc_malloc]
+         6b6edd20  66431d60  [anon:libc_malloc]
+         6b6edd24  6ab3efd0  [anon:libc_malloc]
+         6b6edd28  66431d7c  [anon:libc_malloc]
+         6b6edd2c  0000025c  
+         6b6edd30  6ab3f0e0  [anon:libc_malloc]
+         6b6edd34  6af0aa47  /system/vendor/lib/libp2p.so
+         6b6edd38  6ab3efd0  [anon:libc_malloc]
+         6b6edd3c  00000000  
+         6b6edd40  6af0aa31  /system/vendor/lib/libp2p.so
+         6b6edd44  66431d18  [anon:libc_malloc]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29525, name: kuwo.kwmusiccar
+    r0 0000002a  r1 6ab42240  r2 00000410  r3 00000000
+    r4 6b7ebca8  r5 6b7ebca4  r6 6aff3d24  r7 00000124
+    r8 00000000  r9 00000410  sl 6ab42240  fp 6b7ebd44
+    ip 6b7ebc90  sp 6b7ebc80  lr 6af215a7  pc 4007b414  cpsr 000f0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  8000000000000000  d5  0000000000000000
+    d6  000000a000000000  d7  42c800004a31a5e0
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000010
+
+backtrace:
+    #00  pc 00021414  /system/lib/libc.so (recvfrom+16)
+    #01  pc 000875a3  /system/vendor/lib/libp2p.so (Poco::Net::SocketImpl::receiveFrom(void*, int, Poco::Net::SocketAddress&, int)+66)
+
+stack:
+         6b7ebc40  00000000  
+         6b7ebc44  00000000  
+         6b7ebc48  00000000  
+         6b7ebc4c  00000000  
+         6b7ebc50  00000000  
+         6b7ebc54  00000000  
+         6b7ebc58  00000000  
+         6b7ebc5c  00000000  
+         6b7ebc60  00000000  
+         6b7ebc64  00000000  
+         6b7ebc68  00000000  
+         6b7ebc6c  00000000  
+         6b7ebc70  00000000  
+         6b7ebc74  00000000  
+         6b7ebc78  00000000  
+         6b7ebc7c  00000000  
+    #00  6b7ebc80  6a612468  [anon:libc_malloc]
+         6b7ebc84  6b6ee000  
+         6b7ebc88  6b7ebca8  [stack:29525]
+         6b7ebc8c  6b7ebca4  [stack:29525]
+    #01  6b7ebc90  6b7ebca8  [stack:29525]
+         6b7ebc94  6b7ebca4  [stack:29525]
+         6b7ebc98  6aff3d24  /system/vendor/lib/libp2p.so
+         6b7ebc9c  400a8384  
+         6b7ebca0  00000000  
+         6b7ebca4  0000001c  
+         6b7ebca8  00000000  
+         6b7ebcac  00000000  
+         6b7ebcb0  00000418  
+         6b7ebcb4  6aff3d24  /system/vendor/lib/libp2p.so
+         6b7ebcb8  00000423  
+         6b7ebcbc  6aff3d24  /system/vendor/lib/libp2p.so
+         6b7ebcc0  6ab42240  [anon:libc_malloc]
+         6b7ebcc4  4006af43  /system/lib/libc.so (dlmalloc+4254)
+         6b7ebcc8  00000418  
+         6b7ebccc  400a3e00  /system/lib/libc.so
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29526, name: kuwo.kwmusiccar
+    r0 0000002b  r1 6ab41238  r2 00001000  r3 40080909
+    r4 400b1d8c  r5 00000004  r6 00000004  r7 00000003
+    r8 00000004  r9 6b8e9ab0  sl 00000001  fp 00000000
+    ip 400b2324  sp 6b8e9a30  lr 40080915  pc 4007a39c  cpsr 600f0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  8000000000000000  d5  0000000000000000
+    d6  000000a000000000  d7  42c800004a31a5e0
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000010
+
+backtrace:
+    #00  pc 0002039c  /system/lib/libc.so (read+8)
+    #01  pc 00026911  /system/lib/libc.so (__sread+8)
+    #02  pc 00026767  /system/lib/libc.so (__srefill+218)
+    #03  pc 00025e0f  /system/lib/libc.so (fread+358)
+    #04  pc 00037381  /system/lib/libc.so (android_getaddrinfoforiface+1268)
+    #05  pc 0003764b  /system/lib/libc.so (getaddrinfo+10)
+    #06  pc 000905b9  /system/vendor/lib/libp2p.so (Poco::Net::DNS::hostByName(std::string const&, unsigned int)+36)
+
+stack:
+         6b8e99f0  6b8e9ae4  [stack:29526]
+         6b8e99f4  6ab41224  [anon:libc_malloc]
+         6b8e99f8  6b8e9ae0  [stack:29526]
+         6b8e99fc  06e4e135  
+         6b8e9a00  6ab41224  [anon:libc_malloc]
+         6b8e9a04  00000000  
+         6b8e9a08  00000000  
+         6b8e9a0c  00000000  
+         6b8e9a10  00000000  
+         6b8e9a14  400b1d8c  
+         6b8e9a18  400b2324  
+         6b8e9a1c  6b8e9a60  [stack:29526]
+         6b8e9a20  4009db48  /system/lib/libc.so
+         6b8e9a24  00000000  
+         6b8e9a28  400b1d8c  
+         6b8e9a2c  00000004  
+    #00  6b8e9a30  400b1d8c  
+         ........  ........
+    #01  6b8e9a30  400b1d8c  
+         6b8e9a34  40080769  /system/lib/libc.so (__srefill+220)
+    #02  6b8e9a38  400b1d8c  
+         6b8e9a3c  4007fe13  /system/lib/libc.so (fread+362)
+    #03  6b8e9a40  400b1d8c  
+         6b8e9a44  400b1d8c  
+         6b8e9a48  00000000  
+         6b8e9a4c  4009cc65  /system/lib/libc.so
+         6b8e9a50  4009cc65  /system/lib/libc.so
+         6b8e9a54  6b8e9bf0  [stack:29526]
+         6b8e9a58  400a3d9c  /system/lib/libc.so
+         6b8e9a5c  ffffffff  
+         6b8e9a60  00000000  
+         6b8e9a64  40091385  /system/lib/libc.so (android_getaddrinfoforiface+1272)
+    #04  6b8e9a68  00000402  
+         6b8e9a6c  00000000  
+         6b8e9a70  00000000  
+         6b8e9a74  00000000  
+         6b8e9a78  4009cc65  /system/lib/libc.so
+         6b8e9a7c  00000000  
+         6b8e9a80  6b8e9ae0  [stack:29526]
+         6b8e9a84  00000000  
+         6b8e9a88  00000000  
+         6b8e9a8c  6b8e9ac4  [stack:29526]
+         6b8e9a90  400a3ce8  /system/lib/libc.so
+         6b8e9a94  00000000  
+         6b8e9a98  6b8e9bd0  [stack:29526]
+         6b8e9a9c  4009cc65  /system/lib/libc.so
+         6b8e9aa0  00000000  
+         6b8e9aa4  400a8384  
+         ........  ........
+    #05  6b8e9bc0  00000000  
+         6b8e9bc4  6b8e9bd0  [stack:29526]
+         6b8e9bc8  00000000  
+         6b8e9bcc  6af2a5bd  /system/vendor/lib/libp2p.so (Poco::Net::DNS::hostByName(std::string const&, unsigned int)+40)
+    #06  6b8e9bd0  00000000  
+         6b8e9bd4  00000000  
+         6b8e9bd8  00000000  
+         6b8e9bdc  6afeddc0  /system/vendor/lib/libp2p.so
+         6b8e9be0  00000000  
+         6b8e9be4  00000000  
+         6b8e9be8  00000000  
+         6b8e9bec  00000000  
+         6b8e9bf0  00000402  
+         6b8e9bf4  00000000  
+         6b8e9bf8  00000000  
+         6b8e9bfc  00000000  
+         6b8e9c00  00000000  
+         6b8e9c04  00000000  
+         6b8e9c08  00000000  
+         6b8e9c0c  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 29504, tid: 29527, name: kuwo.kwmusiccar
+    r0 0000002c  r1 6ab426a0  r2 00001000  r3 40080909
+    r4 400b1de0  r5 00000004  r6 00000004  r7 00000003
+    r8 00000004  r9 6b9e7b28  sl 00000001  fp 00000000
+    ip 400b2324  sp 6b9e7aa8  lr 40080915  pc 4007a39c  cpsr 600f0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  8000000000000000  d5  0000000000000000
+    d6  000000a000000000  d7  42c800004a31a5e0
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 41b2df4749000000  d19 0000000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000000  d25 0000000000000000
+    d26 0000000000000000  d27 0000000000000000
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000010
+
+backtrace:
+    #00  pc 0002039c  /system/lib/libc.so (read+8)
+    #01  pc 00026911  /system/lib/libc.so (__sread+8)
+    #02  pc 00026767  /system/lib/libc.so (__srefill+218)
+    #03  pc 00025e0f  /system/lib/libc.so (fread+358)
+    #04  pc 00037381  /system/lib/libc.so (android_getaddrinfoforiface+1268)
+    #05  pc 0003764b  /system/lib/libc.so (getaddrinfo+10)
+    #06  pc 000905b9  /system/vendor/lib/libp2p.so (Poco::Net::DNS::hostByName(std::string const&, unsigned int)+36)
+
+stack:
+         6b9e7a68  6b9e7b5c  [stack:29527]
+         6b9e7a6c  6ab4268c  [anon:libc_malloc]
+         6b9e7a70  6b9e7b58  [stack:29527]
+         6b9e7a74  06e4e135  
+         6b9e7a78  6ab4268c  [anon:libc_malloc]
+         6b9e7a7c  00000000  
+         6b9e7a80  00000000  
+         6b9e7a84  00000000  
+         6b9e7a88  00000000  
+         6b9e7a8c  400b1de0  
+         6b9e7a90  400b2324  
+         6b9e7a94  6b9e7ad8  [stack:29527]
+         6b9e7a98  4009db48  /system/lib/libc.so
+         6b9e7a9c  00000000  
+         6b9e7aa0  400b1de0  
+         6b9e7aa4  00000004  
+    #00  6b9e7aa8  400b1de0  
+         ........  ........
+    #01  6b9e7aa8  400b1de0  
+         6b9e7aac  40080769  /system/lib/libc.so (__srefill+220)
+    #02  6b9e7ab0  400b1de0  
+         6b9e7ab4  4007fe13  /system/lib/libc.so (fread+362)
+    #03  6b9e7ab8  400b1de0  
+         6b9e7abc  400b1de0  
+         6b9e7ac0  00000000  
+         6b9e7ac4  4009cc65  /system/lib/libc.so
+         6b9e7ac8  4009cc65  /system/lib/libc.so
+         6b9e7acc  6b9e7c68  [stack:29527]
+         6b9e7ad0  400a3d9c  /system/lib/libc.so
+         6b9e7ad4  ffffffff  
+         6b9e7ad8  00000000  
+         6b9e7adc  40091385  /system/lib/libc.so (android_getaddrinfoforiface+1272)
+    #04  6b9e7ae0  00000402  
+         6b9e7ae4  00000000  
+         6b9e7ae8  00000000  
+         6b9e7aec  00000000  
+         6b9e7af0  4009cc65  /system/lib/libc.so
+         6b9e7af4  00000000  
+         6b9e7af8  6b9e7b58  [stack:29527]
+         6b9e7afc  00000000  
+         6b9e7b00  00000000  
+         6b9e7b04  6b9e7b3c  [stack:29527]
+         6b9e7b08  400a3ce8  /system/lib/libc.so
+         6b9e7b0c  00000000  
+         6b9e7b10  6b9e7c48  [stack:29527]
+         6b9e7b14  4009cc65  /system/lib/libc.so
+         6b9e7b18  00000000  
+         6b9e7b1c  400a8384  
+         ........  ........
+    #05  6b9e7c38  00000000  
+         6b9e7c3c  6b9e7c48  [stack:29527]
+         6b9e7c40  00000000  
+         6b9e7c44  6af2a5bd  /system/vendor/lib/libp2p.so (Poco::Net::DNS::hostByName(std::string const&, unsigned int)+40)
+    #06  6b9e7c48  00000000  
+         6b9e7c4c  00000000  
+         6b9e7c50  00000000  
+         6b9e7c54  6afeddc0  /system/vendor/lib/libp2p.so
+         6b9e7c58  00000000  
+         6b9e7c5c  00000000  
+         6b9e7c60  00000000  
+         6b9e7c64  00000000  
+         6b9e7c68  00000402  
+         6b9e7c6c  00000000  
+         6b9e7c70  00000000  
+         6b9e7c74  00000000  
+         6b9e7c78  00000000  
+         6b9e7c7c  00000000  
+         6b9e7c80  00000000  
+         6b9e7c84  00000000  
