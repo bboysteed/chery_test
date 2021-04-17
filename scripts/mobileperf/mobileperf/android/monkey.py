@@ -64,11 +64,7 @@ class Monkey(object):
         if hasattr(self, '_monkey_running') and self.running == True:
             logger.warn(u'monkey process have started,not need start')
             return
-        self.monkey_cmd = 'monkey -p %s -v -v -v -s 1000 ' \
-                          '--ignore-crashes --ignore-timeouts --ignore-security-exceptions ' \
-                          '--kill-process-after-error --pct-appswitch 20 --pct-touch 40 ' \
-                          '--pct-motion 10 --pct-trackball 0 --pct-anyevent 10 --pct-flip 0 --pct-pinchzoom 0 ' \
-                          '--throttle 1000 %s' % (package, str(timeout))
+        self.monkey_cmd = 'monkey -p %s --pct-syskeys 0 --throttle 100 -v -v -v 10000' % package
         self._log_pipe = self.device.adb.run_shell_cmd(self.monkey_cmd, sync=False)
         self._monkey_thread = threading.Thread(target=self._monkey_thread_func, args=[RuntimeData.package_save_path])
         # self._monkey_thread.setDaemon(True)

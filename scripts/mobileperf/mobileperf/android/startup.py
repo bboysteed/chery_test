@@ -301,7 +301,7 @@ class StartUp(object):
         cost_time =round((float) (time.time() - TimeUtils.getTimeStamp(RuntimeData.start_time,TimeUtils.UnderLineFormatter))/3600,2)
         self.add_device_info("test cost time:",str(cost_time)+"h")
         # 根据csv生成excel汇总文件
-        Report(RuntimeData.package_save_path,self.packages)
+        Report(os.path.abspath(RuntimeData.package_save_path),self.packages)
         self.pull_heapdump()
         self.pull_log_files()
         # self.memory_analyse()
